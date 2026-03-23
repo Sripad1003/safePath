@@ -16,12 +16,15 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "connect-flash": "^0.1.1",
+    "dotenv": "^17.3.1",
     "ejs": "^4.0.1",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
     "method-override": "^2.3.10",
+    "mongoose": "^9.3.2",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "socket.io": "^4.8.3"
   }
 }
