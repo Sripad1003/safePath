@@ -1,371 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Safe Path Recommender</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="safePath.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/navbar-fixed-left.min.css">
- 	<link rel="stylesheet" href="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/docs.css">
+<head>
+  <title>Safe Path Recommender</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <meta charset="utf-8">
-    <style>
-      #map { height: 100%; }
-      html, body { height: 100%; margin: 0; padding: 0; }
-      .controls { margin-top: 10px; border: 1px solid transparent; border-radius: 2px 0 0 2px; box-sizing: border-box; height: 32px; outline: none; box-shadow: 0 2px 6px rgba(0,0,0,0.3); }
-      #origin-input, #destination-input { background-color: #fff; font-family: Roboto; font-size: 15px; font-weight: 300; margin-left:12px; padding: 0 11px 0 13px; text-overflow: ellipsis; width:200px; }
-      #origin-input:focus, #destination-input:focus { border-color: #4d90fe; }
-      #mode-selector { color: #fff; background-color: #4d90fe; margin-left:12px; padding: 5px 11px 0px 11px; }
-      #mode-selector label { font-family: Roboto; font-size:13px; font-weight:300; }
-      li{ font-family: georgia; }
-      body{ padding-top:70px; background: url(http://holeinthedonut.smugmug.com/DailyPhotos/HITD-Daily-Photos/i-Wmw432C/0/O/Illinois-Chicago-downtown-street-scene.jpg); background-size: cover; background-position:center; }
-      .jumbotron{ color:#2c3e50; background-size: cover; height:20%; padding:0.5em 0.6em; }
-      h1{ font-size:2em; } p{ font-size:1.2em;}
-      .btn{ padding:0.5em; }
-      .navbar-inverse{ background:#2c3e50; }
-      .navbar-inverse .navbar-nav>li>a{ color:white; }
-      .navbar-inverse .navbar-brand{ color:white; }
-      .row{ font-family: Raleway; color:white; }
-      #creator, #map, #stats, #credentials{ text-align:center; }
-      footer { position: fixed; height: 30%; bottom: 0; width: 85%; }
-      .fab{ font-size:100px; }
-      .search{ margin-top:20px; }
-	  .ui.main.container.segment { background: rgba(255,255,255,0.0); } /* keep layout */
-    </style>
-  </head>
-  <body>
-  	<div class="ui main container segment">
-  		<h1 style="font-size: 75px; font-family: georgia">Safe Path Recommender</h1>
-  		<h2 style="text-align: right; font-family: georgia">Because you must look before you leave!</h2>
-  	</div>
+  <style>
+    html, body { height: 100%; margin: 0; padding: 0; }
+    body {
+      padding-top: 70px;
+      background: url(http://holeinthedonut.smugmug.com/DailyPhotos/HITD-Daily-Photos/i-Wmw432C/0/O/Illinois-Chicago-downtown-street-scene.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    #map { height: 70vh; width: 100%; }
+    .controls {
+      margin: 10px;
+      padding: 6px;
+      width: 240px;
+    }
+  </style>
+</head>
 
-    <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
-    <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
+<body>
 
-    <div id="mode-selector" class="controls">
-      <input type="radio" name="type" id="changemode-walking" checked="checked">
-      <label for="changemode-walking">Walking</label>
+<div class="ui container">
+  <h1 style="color:white;font-family:georgia">Safe Path Recommender</h1>
+  <h3 style="color:white">Because you must look before you leave!</h3>
+</div>
 
-      <input type="radio" name="type" id="changemode-transit">
-      <label for="changemode-transit">Transit</label>
+<input id="origin-input" class="controls" placeholder="Origin">
+<input id="destination-input" class="controls" placeholder="Destination">
 
-      <input type="radio" name="type" id="changemode-driving">
-      <label for="changemode-driving">Driving</label>
-    </div>
+<div id="mode-selector" class="controls">
+  <input type="radio" name="type" id="walking" checked> Walking
+  <input type="radio" name="type" id="driving"> Driving
+  <input type="radio" name="type" id="transit"> Transit
+</div>
 
-    <div id="map" class="ui container"></div>
-   <div class="ui container">
-   	<h2 style="color: white">Choose the path with the least danger index for a safe travel!</h2>
-   </div>
+<div id="map"></div>
 
-    <!-- Fixed script tag: no stray space, libraries present. Callback optional since initMap is invoked with geolocation below. -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpANrFCV_qCBFMn8BsZFjT0T-nDwa0da8&libraries=places"></script>
+<!-- GOOGLE MAPS SCRIPT (CORRECT WAY) -->
+<script
+  src="/maps-loader.js"
+  async defer
+></script>
 
-    <script>
-      // your data (kept as-is). NOTE: some entries may have lat/long swapped in source,
-      // but I haven't changed the dataset here — only removed the C junk.
-      var data = [
-  { 'lati': 78.4094, 'longi': 17.4435, 'type': 'Feature', 'properties': {'mag': 2} }, // kukatpally
-  { 'lati': 78.3762, 'longi': 17.4478, 'type': 'Feature', 'properties': {'mag': 3} }, // hitech city / madhapur
-  { 'lati': 78.4488, 'longi': 17.4210, 'type': 'Feature', 'properties': {'mag': 1} }, // banjara hills
-  { 'lati': 78.4983, 'longi': 17.4365, 'type': 'Feature', 'properties': {'mag': 4} }, // secunderabad
-  { 'lati': 78.3841, 'longi': 17.4325, 'type': 'Feature', 'properties': {'mag': 2} }  // gachibowli
+<script>
+let map, directionsService, directionsRenderer;
+
+function initMap() {
+  const hyd = { lat: 17.385044, lng: 78.486671 };
+
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: hyd,
+    zoom: 12
+  });
+
+  directionsService = new google.maps.DirectionsService();
+  directionsRenderer = new google.maps.DirectionsRenderer({
+    map: map
+  });
+
+  new google.maps.Marker({
+    position: hyd,
+    map: map,
+    title: "Delhi"
+  });
+
+  setupAutocomplete(); // ✅ REQUIRED
+}
+</script>
+
+
+
+<script>
+/* ------------------ DUMMY HYDERABAD DATA ------------------ */
+const crimeData = [
+  { lat: 17.4478, lng: 78.3762, mag: 10 }, // Madhapur
+  { lat: 17.4435, lng: 78.4094, mag: 100 }, // Kukatpally
+  { lat: 17.4210, lng: 78.4488, mag: 1000 }, // Banjara Hills
+  { lat: 17.4365, lng: 78.4983, mag: 400 }, // Secunderabad
+  { lat: 17.4325, lng: 78.3841, mag: 20000 }  // Gachibowli
 ];
 
-    // --- begin: normalize + Hyderabad filter ---
-var rawData = data;
+let originPlace = null;
+let destinationPlace = null;
 
-// Convert lati/longi to proper lat/lng numbers
-var normalized = rawData.map(function(item) {
-  var lat = Number(item.longi);   // actual latitude
-  var lng = Number(item.lati);    // actual longitude
-  var mag = item.properties && item.properties.mag ? Number(item.properties.mag) : 0;
-  return { lat: lat, lng: lng, mag: mag, raw: item };
-});
+function setupAutocomplete() {
+  const originInput = document.getElementById("origin-input");
+const destinationInput = document.getElementById("destination-input");
 
-// Hyderabad bounding box (wide enough)
-// Hyderabad bounding box (wider)
-var minLat = 16.0, maxLat = 19.0;
-var minLng = 76.5, maxLng = 80.5;
+  const originAutocomplete = new google.maps.places.Autocomplete(originInput);
+  const destinationAutocomplete = new google.maps.places.Autocomplete(destinationInput);
 
-// Filter to Hyderabad data only
-var hyderabadData = normalized.filter(function(p) {
-  return p.lat >= minLat && p.lat <= maxLat &&
-         p.lng >= minLng && p.lng <= maxLng;
-});
+  originAutocomplete.addListener("place_changed", () => {
+    originPlace = originAutocomplete.getPlace();
+    route(originPlace, destinationPlace);
+  });
 
-data = hyderabadData;
-console.log('Hyderabad points:', data.length);
-// --- end: normalize + Hyderabad filter ---
+  destinationAutocomplete.addListener("place_changed", () => {
+    destinationPlace = destinationAutocomplete.getPlace();
+    route(originPlace, destinationPlace);
+  });
+}
 
+function getTravelMode() {
+  if (document.getElementById("walking").checked)
+    return google.maps.TravelMode.WALKING;
+  if (document.getElementById("transit").checked)
+    return google.maps.TravelMode.TRANSIT;
+  return google.maps.TravelMode.DRIVING;
+}
 
-      var map;
-      var directionsDisplay;
-      var directionsService;
+function route(originPlace, destinationPlace) {
+  if (!originPlace || !destinationPlace) return;
 
-      function initMap(location) {
-        directionsService = new google.maps.DirectionsService();
-        directionsDisplay = new google.maps.DirectionsRenderer();
-        var loc;
-        if (location && location.coords) {
-          loc = new google.maps.LatLng(location.coords.latitude, location.coords.longitude);
-        } else {
-          // fallback location (New Delhi) if geolocation not available
-          loc = new google.maps.LatLng(17.3850, 78.4867);
-        }
-
-        map = new google.maps.Map(document.getElementById('map'), {
-          mapTypeControl: false,
-          zoom: 12,
-          center: loc,
-          mapTypeId: 'terrain'
-        });
-
-        var marker = new google.maps.Marker({ position: loc, map: map });
-        directionsDisplay.setMap(map);
-
-        map.data.setStyle(function(feature) {
-          var magnitude = feature.getProperty && feature.getProperty('mag');
-          return { icon: getCircle(magnitude) };
-        });
-
-        new AutocompleteDirectionsHandler(map);
+  directionsService.route(
+    {
+      origin: { placeId: originPlace.place_id },
+      destination: { placeId: destinationPlace.place_id },
+      travelMode: getTravelMode(), // ✅ NOW WORKS
+    },
+    (result, status) => {
+      if (status === "OK") {
+        directionsRenderer.setDirections(result);
+      } else {
+        console.error("Directions failed:", status);
       }
+    }
+  );
+}
 
-      function getCircle(magnitude) {
-        return {
-          path: google.maps.SymbolPath.CIRCLE,
-          fillColor: 'red',
-          fillOpacity: .2,
-          scale: Math.pow(2, (magnitude || 0)) / 2,
-          strokeColor: 'white',
-          strokeWeight: .5
-        };
-      }
 
-      /**
-       * @constructor
-       */
-      function AutocompleteDirectionsHandler(map) {
-        this.map = map;
-        this.originPlaceId = null;
-        this.destinationPlaceId = null;
-        this.travelMode = 'WALKING';
-        var originInput = document.getElementById('origin-input');
-        var destinationInput = document.getElementById('destination-input');
-        var modeSelector = document.getElementById('mode-selector');
-        this.directionsService = new google.maps.DirectionsService;
-        this.directionsDisplay = new google.maps.DirectionsRenderer;
-        this.directionsDisplay.setMap(map);
+</script>
 
-        var originAutocomplete = new google.maps.places.Autocomplete(originInput, {
-  fields: ['place_id','geometry','name','formatted_address'],
-  types: ['geocode']
-});
-var destinationAutocomplete = new google.maps.places.Autocomplete(destinationInput, {
-  fields: ['place_id','geometry','name','formatted_address'],
-  types: ['geocode']
-});
-
-        this.setupClickListener('changemode-driving', 'DRIVING');
-        this.setupClickListener('changemode-walking', 'WALKING');
-        this.setupClickListener('changemode-transit', 'TRANSIT');
-
-        this.setupPlaceChangedListener(originAutocomplete, 'ORIG');
-        this.setupPlaceChangedListener(destinationAutocomplete, 'DEST');
-
-        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
-        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(destinationInput);
-        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(modeSelector);
-      }
-
-      AutocompleteDirectionsHandler.prototype.setupClickListener = function(id, mode) {
-        var radioButton = document.getElementById(id);
-        var me = this;
-        radioButton.addEventListener('click', function() {
-          me.travelMode = mode;
-          me.route();
-        });
-      };
-
-      AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(autocomplete, mode) {
-        var me = this;
-        autocomplete.bindTo('bounds', this.map);
-        autocomplete.addListener('place_changed', function() {
-          var place = autocomplete.getPlace();
-          if (!place.place_id) {
-            window.alert("Please select an option from the dropdown list.");
-            return;
-          }
-          if (mode === 'ORIG') {
-            me.originPlaceId = place.place_id;
-          } else {
-            me.destinationPlaceId = place.place_id;
-          }
-          me.route();
-        });
-      };
-
-      AutocompleteDirectionsHandler.prototype.route = function() {
-        if (!this.originPlaceId || !this.destinationPlaceId) {
-          return;
-        }
-        var me = this;
-
-        this.directionsService.route({
-          origin: {'placeId': this.originPlaceId},
-          destination: {'placeId': this.destinationPlaceId},
-          travelMode: this.travelMode,
-          provideRouteAlternatives: true,
-          unitSystem: google.maps.UnitSystem.METRIC
-        }, function(response, status) {
-          if (status === 'OK') {
-            var images = [
-              { url: 'https://cdn.pixabay.com/photo/2012/04/23/16/54/warning-39047_640.png', scaledSize: new google.maps.Size(28, 28) },
-              { url: 'https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/cps-spc/images/legislation/acts-lois/hazard-symbol-danger1.jpg', scaledSize: new google.maps.Size(28, 28) },
-              { url: 'https://cdn3.iconfinder.com/data/icons/picons-weather/57/53_warning-256.png', scaledSize: new google.maps.Size(23, 23) },
-              { url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png', scaledSize: new google.maps.Size(23, 23) },
-              { url: 'https://static9.depositphotos.com/1431107/1143/i/950/depositphotos_11437164-stock-photo-green-tick.jpg', scaledSize: new google.maps.Size(23, 23) }
-            ];
-            var color = ["purple","yellow","green","blue","pink"];
-
-            var dindex = [];
-            console.log('routes returned:', response.routes.length);
-
-            for (var k = 0; k < response.routes.length; k++) {
-              dindex[k] = 0;
-              var points = response.routes[k].overview_path;
-
-              new google.maps.DirectionsRenderer({
-                map: map,
-                directions: response,
-                routeIndex: k,
-                unitSystem: google.maps.UnitSystem.METRIC,
-                provideRouteAlternatives: true,
-                polylineOptions: {
-                  strokeColor: color[k % color.length],
-                  strokeOpacity: 0.7,
-                  strokeWeight: 10
-                }
-              });
-
-              var infoWindow = new google.maps.InfoWindow();
-              var posInit = null;
-              var count = 0;
-
-              for (var j = 0; j < points.length; j++) {
-                for (var i = 0; i < data.length; i++) {
-                  // Note: original data appears to have lat/long reversed in fields.
-                  // The original code compared string slices — preserve that behavior.
-                  var st1 = data[i].lati.toString();
-                  st1 = st1.slice(0,(st1.indexOf("."))+3);
-                  var st3 = data[i].longi.toString();
-                  st3 = st3.slice(0,(st3.indexOf("."))+3);
-                  var st2 = points[j].lng().toString();
-                  st2 = st2.slice(0,(st2.indexOf("."))+3);
-                  var st4 = points[j].lat().toString();
-                  st4 = st4.slice(0,(st4.indexOf("."))+3);
-
-                  if ((st1 === st2) && (st3 === st4)) {
-                    count++;
-                    posInit = new google.maps.LatLng(data[i].longi, data[i].lati);
-
-                    var mag = data[i].properties && data[i].properties.mag;
-                    if (mag === 4) {
-                      new google.maps.Marker({ position: new google.maps.LatLng(data[i].longi, data[i].lati), icon: images[0], map: map });
-                      dindex[k] += 4;
-                    } else if (mag === 3) {
-                      new google.maps.Marker({ position: new google.maps.LatLng(data[i].longi, data[i].lati), icon: images[1], map: map });
-                      dindex[k] += 3;
-                    } else if (mag === 2) {
-                      new google.maps.Marker({ position: new google.maps.LatLng(data[i].longi, data[i].lati), icon: images[2], map: map });
-                      dindex[k] += 2;
-                    } else if (mag === 1) {
-                      new google.maps.Marker({ position: new google.maps.LatLng(data[i].longi, data[i].lati), icon: images[3], map: map });
-                      dindex[k] += 1;
-                    } else {
-                      // mag 0 or undefined -> no addition
-                    }
-                  } // end if coordinate match
-                } // end for data
-              } // end for points
-
-              // avoid divide-by-zero
-              if (count > 0) {
-                dindex[k] /= count;
-              } else {
-                dindex[k] = 0;
-              }
-
-              // create info block for this route
-              var div = document.createElement('div');
-              div.className = "ui main container segment";
-              var colour = "color" + k,
-                  duration = "duration" + k,
-                  distance = "distance" + k,
-                  safetyi = "safetyi" + k;
-
-              div.innerHTML = '<ul class="msg"><li id="'+colour+'"></li><li id="'+duration+'"></li><li id="'+distance+'"></li><li id="'+safetyi+'"></li></ul>';
-              document.body.appendChild(div);
-
-              document.getElementById(colour).innerHTML = "Route Number: " + k + " is colored " + (color[k % color.length]);
-              document.getElementById(distance).innerHTML = "Distance  : " + (response.routes[k].legs[0].distance.text);
-              document.getElementById(duration).innerHTML = "Time duration for reaching : " + response.routes[k].legs[0].duration.text;
-              infoWindow.setPosition(posInit || response.routes[k].legs[0].start_location);
-              var message = 'dangerIndex is : ' + dindex[k];
-              document.getElementById(safetyi).innerHTML = message;
-            } // end for each route
-
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
-        });
-      };
-
-      $(document).ready(function(){
-        // use geolocation to initialize; fallback handled inside initMap
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(initMap, function(){ initMap(); }, {timeout:5000});
-        } else {
-          initMap();
-        }
-      });
-    </script>
-
-    <footer class="fixed-bottom">
-    	<div class="container">
-    		<div class="row">
-				<div class="col-md-4" >
-		   			 <h3>About us</h3>
-		    		<p>Junior Year developers trying to visualize data distribution concepts and its usage in crime sensing applications.</p>
-				</div>
-
-				<div class="col-md-4">
-		   			 <h3> Our location </h3>
-		   			<address>Jaypee Institute of Information Technology A-10, Sector 62 Noida-201307</address>
-				</div>
-
-				<div class="col-md-4" >
-		    		<h3>Contact Us</h3>
-		    		<ul>
-		        	<li>Phone : 9711037572 </li>
-		        	<li>E-mail : sarthakjoshi2496@gmail.com </li>
-		        	<li>Fax : 123 - 456 - 789</li>
-		    		</ul>
-				</div>
-    		</div>
-    		<div class="row">
-    			<div class="col-md-4"><i class="fab fa-facebook-square fa-2x"></i></div>
-				<div class="col-md-4"><i class="fab fa-twitter-square fa-2x"></i></div>
-				<div class="col-md-4"><i class="fab fa-google-plus-square fa-2x"></i></div>
-    		</div>
-    	</div>
-    </footer>
-  </body>
+</body>
 </html>

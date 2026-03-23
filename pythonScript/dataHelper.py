@@ -87,4 +87,3 @@ for i in range(0, 166):
         }
     ar.append(o)
 print(ar)
-'''
