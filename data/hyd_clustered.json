@@ -4,7 +4,9 @@
     "longi": 17.375809,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Afzal Gunj Bridge - bus terminus"
     }
   },
   {
@@ -12,7 +14,9 @@
     "longi": 17.373174,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Malakpet - freight yard lane"
     }
   },
   {
@@ -20,7 +24,9 @@
     "longi": 17.433592,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Ameerpet - bus terminus"
     }
   },
   {
@@ -28,7 +34,9 @@
     "longi": 17.397881,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Uppal - old city backroad"
     }
   },
   {
@@ -36,7 +44,9 @@
     "longi": 17.351362,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Vanasthalipuram - flyover underpass"
     }
   },
   {
@@ -44,7 +54,9 @@
     "longi": 17.344023,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Vanasthalipuram - railway station outside"
     }
   },
   {
@@ -52,7 +64,9 @@
     "longi": 17.353575,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Vanasthalipuram - auto stand"
     }
   },
   {
@@ -60,7 +74,9 @@
     "longi": 17.53379,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Bachupally - bus stop corner"
     }
   },
   {
@@ -68,7 +84,9 @@
     "longi": 17.371897,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Dilsukhnagar - bus terminus"
     }
   },
   {
@@ -76,7 +94,9 @@
     "longi": 17.268266,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shamshabad - dead end"
     }
   },
   {
@@ -84,7 +104,9 @@
     "longi": 17.238168,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Adibatla - bus stop corner"
     }
   },
   {
@@ -92,7 +114,9 @@
     "longi": 17.413959,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Banjara Hills - parking lot"
     }
   },
   {
@@ -100,7 +124,9 @@
     "longi": 17.21521,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Tukkuguda - back lane"
     }
   },
   {
@@ -108,7 +134,9 @@
     "longi": 17.373568,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Malakpet - old city backroad"
     }
   },
   {
@@ -116,7 +144,9 @@
     "longi": 17.398645,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Uppal - bus terminus"
     }
   },
   {
@@ -124,7 +154,9 @@
     "longi": 17.432111,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Gachibowli Gate - bus stop corner"
     }
   },
   {
@@ -132,7 +164,9 @@
     "longi": 17.380587,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Begum Bazar - parking lot"
     }
   },
   {
@@ -140,7 +174,9 @@
     "longi": 17.417136,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Banjara Hills - service road junction"
     }
   },
   {
@@ -148,7 +184,9 @@
     "longi": 17.4223,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Ghatkesar - dead end"
     }
   },
   {
@@ -156,7 +194,9 @@
     "longi": 17.62932,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Medchal - isolated alley"
     }
   },
   {
@@ -164,7 +204,9 @@
     "longi": 17.381309,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Begum Bazar - red light area"
     }
   },
   {
@@ -172,7 +214,9 @@
     "longi": 17.256909,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ibrahimpatnam - dead end"
     }
   },
   {
@@ -180,7 +224,9 @@
     "longi": 17.445435,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Gachibowli - garbage dump"
     }
   },
   {
@@ -188,7 +234,9 @@
     "longi": 17.421921,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Boduppal - night market road"
     }
   },
   {
@@ -196,7 +244,9 @@
     "longi": 17.549208,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Kompally - flyover approach"
     }
   },
   {
@@ -204,7 +254,9 @@
     "longi": 17.399697,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Uppal - night market road"
     }
   },
   {
@@ -212,7 +264,9 @@
     "longi": 17.484838,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Chandanagar - garbage dump"
     }
   },
   {
@@ -220,7 +274,9 @@
     "longi": 17.549622,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Kompally - back lane"
     }
   },
   {
@@ -228,7 +284,9 @@
     "longi": 17.451484,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Erragadda - parking lot"
     }
   },
   {
@@ -236,7 +294,9 @@
     "longi": 17.395031,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Koti - parking lot"
     }
   },
   {
@@ -244,7 +304,9 @@
     "longi": 17.413552,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Nanakramguda - flyover approach"
     }
   },
   {
@@ -252,7 +314,9 @@
     "longi": 17.443684,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Hitech City - service road junction"
     }
   },
   {
@@ -260,7 +324,9 @@
     "longi": 17.492717,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "JNTU - flyover approach"
     }
   },
   {
@@ -268,7 +334,9 @@
     "longi": 17.402274,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Uppal - old city backroad"
     }
   },
   {
@@ -276,7 +344,9 @@
     "longi": 17.425444,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Boduppal - parking lot"
     }
   },
   {
@@ -284,7 +354,9 @@
     "longi": 17.464016,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kondapur - metro station exit"
     }
   },
   {
@@ -292,7 +364,9 @@
     "longi": 17.489627,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 3,
+      "cluster": 2,
+      "name": "Miyapur - parking lot"
     }
   },
   {
@@ -300,7 +374,9 @@
     "longi": 17.361492,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lad Bazar - slum entrance"
     }
   },
   {
@@ -308,7 +384,9 @@
     "longi": 17.36094,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Charminar - red light area"
     }
   },
   {
@@ -316,7 +394,9 @@
     "longi": 17.493764,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kukatpally - public toilet area"
     }
   },
   {
@@ -324,7 +404,9 @@
     "longi": 17.466907,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kondapur - parking lot"
     }
   },
   {
@@ -332,7 +414,9 @@
     "longi": 17.52764,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Patancheru - market road"
     }
   },
   {
@@ -340,7 +424,9 @@
     "longi": 17.397724,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Manikonda - railway station outside"
     }
   },
   {
@@ -348,7 +434,9 @@
     "longi": 17.464907,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kothaguda - market road"
     }
   },
   {
@@ -356,7 +444,9 @@
     "longi": 17.384938,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "MJ Market - railway station outside"
     }
   },
   {
@@ -364,7 +454,9 @@
     "longi": 17.385697,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Narsingi - flyover approach"
     }
   },
   {
@@ -372,7 +464,9 @@
     "longi": 17.547828,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Isnapur - market road"
     }
   },
   {
@@ -380,7 +474,9 @@
     "longi": 17.393362,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Abids - bridge underpass"
     }
   },
   {
@@ -388,7 +484,9 @@
     "longi": 18.112754,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Siddipet Town - auto stand"
     }
   },
   {
@@ -396,7 +494,9 @@
     "longi": 17.431657,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Gachibowli Gate - dead end"
     }
   },
   {
@@ -404,7 +504,9 @@
     "longi": 17.341813,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Meerpet - slum entrance"
     }
   },
   {
@@ -412,7 +514,9 @@
     "longi": 17.330906,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Meerpet - parking lot"
     }
   },
   {
@@ -420,7 +524,9 @@
     "longi": 17.415952,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "GVK One Back Lane - metro station exit"
     }
   },
   {
@@ -428,7 +534,9 @@
     "longi": 17.450117,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hitech City - parking lot"
     }
   },
   {
@@ -436,7 +544,9 @@
     "longi": 17.256703,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ibrahimpatnam - garbage dump"
     }
   },
   {
@@ -444,7 +554,9 @@
     "longi": 17.4224,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Raidurg - market road"
     }
   },
   {
@@ -452,7 +564,9 @@
     "longi": 17.632796,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 3,
+      "cluster": 2,
+      "name": "Medchal - auto stand"
     }
   },
   {
@@ -460,7 +574,9 @@
     "longi": 17.446266,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "SR Nagar - auto stand"
     }
   },
   {
@@ -468,7 +584,9 @@
     "longi": 17.262816,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "ORR Tukkuguda - auto stand"
     }
   },
   {
@@ -476,7 +594,9 @@
     "longi": 17.450423,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Erragadda - flyover approach"
     }
   },
   {
@@ -484,7 +604,9 @@
     "longi": 17.48896,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Miyapur - railway station outside"
     }
   },
   {
@@ -492,7 +614,9 @@
     "longi": 17.465293,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Balanagar - red light area"
     }
   },
   {
@@ -500,7 +624,9 @@
     "longi": 17.263995,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Tukkuguda - public toilet area"
     }
   },
   {
@@ -508,7 +634,9 @@
     "longi": 17.443407,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hitech City - night market road"
     }
   },
   {
@@ -516,7 +644,9 @@
     "longi": 17.361385,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lad Bazar - narrow gully"
     }
   },
   {
@@ -524,7 +654,9 @@
     "longi": 17.510556,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Patancheru - market road"
     }
   },
   {
@@ -532,7 +664,9 @@
     "longi": 17.431569,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jubilee Hills - flyover approach"
     }
   },
   {
@@ -540,7 +674,9 @@
     "longi": 17.4337,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Rathifile - public toilet area"
     }
   },
   {
@@ -548,7 +684,9 @@
     "longi": 17.433549,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 4,
+      "cluster": 4,
+      "name": "Rathifile - public toilet area"
     }
   },
   {
@@ -556,7 +694,9 @@
     "longi": 17.358922,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Lad Bazar - railway station outside"
     }
   },
   {
@@ -564,7 +704,9 @@
     "longi": 17.624088,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Sangareddy - bus stop corner"
     }
   },
   {
@@ -572,7 +714,9 @@
     "longi": 17.417416,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lotus Pond - garbage dump"
     }
   },
   {
@@ -580,7 +724,9 @@
     "longi": 17.084652,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shadnagar - metro station exit"
     }
   },
   {
@@ -588,7 +734,9 @@
     "longi": 17.420677,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "KBR Park - back lane"
     }
   },
   {
@@ -596,7 +744,9 @@
     "longi": 17.439704,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 3,
+      "cluster": 2,
+      "name": "Rathifile - public toilet area"
     }
   },
   {
@@ -604,7 +754,9 @@
     "longi": 17.626462,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Medchal - public toilet area"
     }
   },
   {
@@ -612,7 +764,9 @@
     "longi": 17.328032,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Rajiv Gandhi Int - flyover approach"
     }
   },
   {
@@ -620,7 +774,9 @@
     "longi": 17.461238,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Balanagar - garbage dump"
     }
   },
   {
@@ -628,7 +784,9 @@
     "longi": 17.393751,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Mehdipatnam - railway station outside"
     }
   },
   {
@@ -636,7 +794,9 @@
     "longi": 17.378175,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Malakpet - night market road"
     }
   },
   {
@@ -644,7 +804,9 @@
     "longi": 17.334722,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Meerpet - metro station exit"
     }
   },
   {
@@ -652,7 +814,9 @@
     "longi": 17.423216,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "KBR Park - metro station exit"
     }
   },
   {
@@ -660,7 +824,9 @@
     "longi": 17.440874,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Gachibowli - parking lot"
     }
   },
   {
@@ -668,7 +834,9 @@
     "longi": 17.362847,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Dilsukhnagar - garbage dump"
     }
   },
   {
@@ -676,7 +844,9 @@
     "longi": 17.444933,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Ghatkesar - public toilet area"
     }
   },
   {
@@ -684,7 +854,9 @@
     "longi": 17.436618,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Gachibowli - isolated alley"
     }
   },
   {
@@ -692,7 +864,9 @@
     "longi": 17.45149,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Begumpet - parking lot"
     }
   },
   {
@@ -700,7 +874,9 @@
     "longi": 17.422307,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jubilee Hills - dead end"
     }
   },
   {
@@ -708,7 +884,9 @@
     "longi": 17.394705,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kokapet - isolated alley"
     }
   },
   {
@@ -716,7 +894,9 @@
     "longi": 17.423705,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Ghatkesar - isolated alley"
     }
   },
   {
@@ -724,7 +904,9 @@
     "longi": 17.434332,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Ameerpet - bus terminus"
     }
   },
   {
@@ -732,7 +914,9 @@
     "longi": 17.402426,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Manikonda - railway station outside"
     }
   },
   {
@@ -740,7 +924,9 @@
     "longi": 17.421163,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Ghatkesar - isolated alley"
     }
   },
   {
@@ -748,7 +934,9 @@
     "longi": 17.487378,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Kukatpally - railway station outside"
     }
   },
   {
@@ -756,7 +944,9 @@
     "longi": 17.326514,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Rajiv Gandhi Int - night market road"
     }
   },
   {
@@ -764,7 +954,9 @@
     "longi": 17.518359,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jeedimetla - flyover approach"
     }
   },
   {
@@ -772,7 +964,9 @@
     "longi": 17.421458,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Road No 36 - bus terminus"
     }
   },
   {
@@ -780,7 +974,9 @@
     "longi": 17.418369,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "GVK One Back Lane - market road"
     }
   },
   {
@@ -788,7 +984,9 @@
     "longi": 17.530238,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kompally - bus stop corner"
     }
   },
   {
@@ -796,7 +994,9 @@
     "longi": 17.390136,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kokapet - service road junction"
     }
   },
   {
@@ -804,7 +1004,9 @@
     "longi": 17.415634,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Banjara Hills - garbage dump"
     }
   },
   {
@@ -812,7 +1014,9 @@
     "longi": 17.373788,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Dilsukhnagar - garbage dump"
     }
   },
   {
@@ -820,7 +1024,9 @@
     "longi": 17.253141,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ibrahimpatnam - parking lot"
     }
   },
   {
@@ -828,7 +1034,9 @@
     "longi": 17.444717,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Ghatkesar - public toilet area"
     }
   },
   {
@@ -836,7 +1044,9 @@
     "longi": 17.543733,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Isnapur - market road"
     }
   },
   {
@@ -844,7 +1054,9 @@
     "longi": 17.622894,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Sangareddy - flyover approach"
     }
   },
   {
@@ -852,7 +1064,9 @@
     "longi": 17.44352,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hitech City - garbage dump"
     }
   },
   {
@@ -860,7 +1074,9 @@
     "longi": 17.622198,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Sangareddy - night market road"
     }
   },
   {
@@ -868,7 +1084,9 @@
     "longi": 17.629747,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Medchal - metro station exit"
     }
   },
   {
@@ -876,7 +1094,9 @@
     "longi": 17.440632,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Secunderabad - bridge underpass"
     }
   },
   {
@@ -884,7 +1104,9 @@
     "longi": 17.412588,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Nanakramguda - dead end"
     }
   },
   {
@@ -892,7 +1114,9 @@
     "longi": 17.422999,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Jubilee Hills - metro station exit"
     }
   },
   {
@@ -900,7 +1124,9 @@
     "longi": 17.477816,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Trimulgherry - market road"
     }
   },
   {
@@ -908,7 +1134,9 @@
     "longi": 17.489925,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Miyapur - bus stop corner"
     }
   },
   {
@@ -916,7 +1144,9 @@
     "longi": 17.622171,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 4,
+      "cluster": 4,
+      "name": "Sangareddy - flyover underpass"
     }
   },
   {
@@ -924,7 +1154,9 @@
     "longi": 17.444791,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 3,
+      "cluster": 2,
+      "name": "Paradise Circle - public toilet area"
     }
   },
   {
@@ -932,7 +1164,9 @@
     "longi": 17.44874,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Madhapur - narrow gully"
     }
   },
   {
@@ -940,7 +1174,9 @@
     "longi": 17.431106,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Gachibowli Gate - market road"
     }
   },
   {
@@ -948,7 +1184,9 @@
     "longi": 17.338517,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Bandlaguda - flyover approach"
     }
   },
   {
@@ -956,7 +1194,9 @@
     "longi": 17.466684,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Balanagar - flyover underpass"
     }
   },
   {
@@ -964,7 +1204,9 @@
     "longi": 17.456062,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kondapur - public toilet area"
     }
   },
   {
@@ -972,7 +1214,9 @@
     "longi": 17.507595,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Alwal - market road"
     }
   },
   {
@@ -980,7 +1224,9 @@
     "longi": 17.451325,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Erragadda - metro station exit"
     }
   },
   {
@@ -988,7 +1234,9 @@
     "longi": 17.527464,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kompally - auto stand"
     }
   },
   {
@@ -996,7 +1244,9 @@
     "longi": 17.52201,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Patancheru - parking lot"
     }
   },
   {
@@ -1004,7 +1254,9 @@
     "longi": 17.302499,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Rajendranagar - parking lot"
     }
   },
   {
@@ -1012,7 +1264,9 @@
     "longi": 17.434967,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 4,
+      "cluster": 4,
+      "name": "Financial District - railway station outside"
     }
   },
   {
@@ -1020,7 +1274,9 @@
     "longi": 17.421561,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Raidurg - parking lot"
     }
   },
   {
@@ -1028,7 +1284,9 @@
     "longi": 17.430595,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Ameerpet - public toilet area"
     }
   },
   {
@@ -1036,7 +1294,9 @@
     "longi": 17.336349,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Meerpet - metro station exit"
     }
   },
   {
@@ -1044,7 +1304,9 @@
     "longi": 17.385333,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "MJ Market - auto stand"
     }
   },
   {
@@ -1052,7 +1314,9 @@
     "longi": 17.420679,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "GVK One Back Lane - parking lot"
     }
   },
   {
@@ -1060,7 +1324,9 @@
     "longi": 17.549031,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Isnapur - parking lot"
     }
   },
   {
@@ -1068,7 +1334,9 @@
     "longi": 17.456265,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Erragadda - auto stand"
     }
   },
   {
@@ -1076,7 +1344,9 @@
     "longi": 17.447832,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Begumpet - market road"
     }
   },
   {
@@ -1084,7 +1354,9 @@
     "longi": 17.394768,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kokapet - bus stop corner"
     }
   },
   {
@@ -1092,7 +1364,9 @@
     "longi": 17.510062,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Patancheru - metro station exit"
     }
   },
   {
@@ -1100,7 +1374,9 @@
     "longi": 17.26339,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Tukkuguda - night market road"
     }
   },
   {
@@ -1108,7 +1384,9 @@
     "longi": 17.26394,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shamshabad - bus stop corner"
     }
   },
   {
@@ -1116,7 +1394,9 @@
     "longi": 17.410757,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Manikonda - public toilet area"
     }
   },
   {
@@ -1124,7 +1404,9 @@
     "longi": 17.623729,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Sangareddy - flyover underpass"
     }
   },
   {
@@ -1132,7 +1414,9 @@
     "longi": 17.414386,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Lotus Pond - railway station outside"
     }
   },
   {
@@ -1140,7 +1424,9 @@
     "longi": 17.54887,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Isnapur - market road"
     }
   },
   {
@@ -1148,7 +1434,9 @@
     "longi": 17.41698,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "GVK One Back Lane - dead end"
     }
   },
   {
@@ -1156,7 +1444,9 @@
     "longi": 17.261643,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shamshabad - flyover approach"
     }
   },
   {
@@ -1164,7 +1454,9 @@
     "longi": 17.434306,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Ameerpet - old city backroad"
     }
   },
   {
@@ -1172,7 +1464,9 @@
     "longi": 17.528421,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kompally - flyover approach"
     }
   },
   {
@@ -1180,7 +1474,9 @@
     "longi": 17.389965,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Narsingi - garbage dump"
     }
   },
   {
@@ -1188,7 +1484,9 @@
     "longi": 17.501796,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Alwal - market road"
     }
   },
   {
@@ -1196,7 +1494,9 @@
     "longi": 17.382748,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Nagole - parking lot"
     }
   },
   {
@@ -1204,7 +1504,9 @@
     "longi": 17.445241,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Begumpet - auto stand"
     }
   },
   {
@@ -1212,7 +1514,9 @@
     "longi": 17.440932,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "SR Nagar - bus stop corner"
     }
   },
   {
@@ -1220,7 +1524,9 @@
     "longi": 17.342891,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Bandlaguda - market road"
     }
   },
   {
@@ -1228,7 +1534,9 @@
     "longi": 17.441895,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Paradise Circle - freight yard lane"
     }
   },
   {
@@ -1236,7 +1544,9 @@
     "longi": 17.421654,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Raidurg - bus stop corner"
     }
   },
   {
@@ -1244,7 +1554,9 @@
     "longi": 17.327954,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Aramghar - flyover underpass"
     }
   },
   {
@@ -1252,7 +1564,9 @@
     "longi": 17.390533,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Koti - night market road"
     }
   },
   {
@@ -1260,7 +1574,9 @@
     "longi": 17.482919,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Trimulgherry - back lane"
     }
   },
   {
@@ -1268,7 +1584,9 @@
     "longi": 17.526337,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Patancheru - auto stand"
     }
   },
   {
@@ -1276,7 +1594,9 @@
     "longi": 17.387485,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Narsingi - auto stand"
     }
   },
   {
@@ -1284,7 +1604,9 @@
     "longi": 17.445912,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Borabanda - garbage dump"
     }
   },
   {
@@ -1292,7 +1614,9 @@
     "longi": 17.54897,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Kompally - flyover approach"
     }
   },
   {
@@ -1300,7 +1624,9 @@
     "longi": 17.480582,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Kukatpally - narrow gully"
     }
   },
   {
@@ -1308,7 +1634,9 @@
     "longi": 17.484537,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Trimulgherry - dead end"
     }
   },
   {
@@ -1316,7 +1644,9 @@
     "longi": 17.430757,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Boduppal - auto stand"
     }
   },
   {
@@ -1324,7 +1654,9 @@
     "longi": 17.421703,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Boduppal - metro station exit"
     }
   },
   {
@@ -1332,7 +1664,9 @@
     "longi": 17.381597,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Nagole - metro station exit"
     }
   },
   {
@@ -1340,7 +1674,9 @@
     "longi": 17.445871,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Ghatkesar - night market road"
     }
   },
   {
@@ -1348,7 +1684,9 @@
     "longi": 17.211254,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Tukkuguda - isolated alley"
     }
   },
   {
@@ -1356,7 +1694,9 @@
     "longi": 17.51683,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jeedimetla - service road junction"
     }
   },
   {
@@ -1364,7 +1704,9 @@
     "longi": 17.359381,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "LB Nagar - night market road"
     }
   },
   {
@@ -1372,7 +1714,9 @@
     "longi": 17.430269,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Secunderabad - fish market alley"
     }
   },
   {
@@ -1380,7 +1724,9 @@
     "longi": 17.501173,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Alwal - isolated alley"
     }
   },
   {
@@ -1388,7 +1734,9 @@
     "longi": 17.438484,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 3,
+      "cluster": 2,
+      "name": "Ameerpet - auto stand"
     }
   },
   {
@@ -1396,7 +1744,9 @@
     "longi": 17.395105,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kokapet - back lane"
     }
   },
   {
@@ -1404,7 +1754,9 @@
     "longi": 17.44432,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Gachibowli - isolated alley"
     }
   },
   {
@@ -1412,7 +1764,9 @@
     "longi": 17.469486,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Balanagar - bus terminus"
     }
   },
   {
@@ -1420,7 +1774,9 @@
     "longi": 17.533611,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Bachupally - flyover approach"
     }
   },
   {
@@ -1428,7 +1784,9 @@
     "longi": 17.458368,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Madhapur - flyover underpass"
     }
   },
   {
@@ -1436,7 +1794,9 @@
     "longi": 17.260964,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Tukkuguda - bus stop corner"
     }
   },
   {
@@ -1444,7 +1804,9 @@
     "longi": 17.392945,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 3,
+      "cluster": 2,
+      "name": "Abids - public toilet area"
     }
   },
   {
@@ -1452,7 +1814,9 @@
     "longi": 17.378339,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Afzal Gunj Bridge - freight yard lane"
     }
   },
   {
@@ -1460,7 +1824,9 @@
     "longi": 17.366603,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Dilsukhnagar - parking lot"
     }
   },
   {
@@ -1468,7 +1834,9 @@
     "longi": 17.435817,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Rathifile - bridge underpass"
     }
   },
   {
@@ -1476,7 +1844,9 @@
     "longi": 18.097002,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Siddipet Town - back lane"
     }
   },
   {
@@ -1484,7 +1854,9 @@
     "longi": 17.39523,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Mehdipatnam - bus terminus"
     }
   },
   {
@@ -1492,7 +1864,9 @@
     "longi": 17.433535,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Rathifile - flyover underpass"
     }
   },
   {
@@ -1500,7 +1874,9 @@
     "longi": 17.324606,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Aramghar - bridge underpass"
     }
   },
   {
@@ -1508,7 +1884,9 @@
     "longi": 17.332582,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hayathnagar - market road"
     }
   },
   {
@@ -1516,7 +1894,9 @@
     "longi": 17.428838,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Ghatkesar - service road junction"
     }
   },
   {
@@ -1524,7 +1904,9 @@
     "longi": 17.349725,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Vanasthalipuram - metro station exit"
     }
   },
   {
@@ -1532,7 +1914,9 @@
     "longi": 17.421878,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Ghatkesar - metro station exit"
     }
   },
   {
@@ -1540,7 +1924,9 @@
     "longi": 17.42382,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Banjara Hills - flyover approach"
     }
   },
   {
@@ -1548,7 +1934,9 @@
     "longi": 17.38576,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "MJ Market - bus stop corner"
     }
   },
   {
@@ -1556,7 +1944,9 @@
     "longi": 17.077291,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Shadnagar - auto stand"
     }
   },
   {
@@ -1564,7 +1954,9 @@
     "longi": 17.391453,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Nampally - narrow gully"
     }
   },
   {
@@ -1572,7 +1964,9 @@
     "longi": 17.449422,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Begumpet - market road"
     }
   },
   {
@@ -1580,7 +1974,9 @@
     "longi": 17.429558,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 4,
+      "cluster": 4,
+      "name": "Financial District - night market road"
     }
   },
   {
@@ -1588,7 +1984,9 @@
     "longi": 17.431814,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Biodiversity Park - metro station exit"
     }
   },
   {
@@ -1596,7 +1994,9 @@
     "longi": 17.539214,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Kompally - parking lot"
     }
   },
   {
@@ -1604,7 +2004,9 @@
     "longi": 17.214584,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Tukkuguda - auto stand"
     }
   },
   {
@@ -1612,7 +2014,9 @@
     "longi": 17.420233,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "KBR Park - service road junction"
     }
   },
   {
@@ -1620,7 +2024,9 @@
     "longi": 17.428017,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jubilee Hills - market road"
     }
   },
   {
@@ -1628,7 +2034,9 @@
     "longi": 17.545263,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Isnapur - isolated alley"
     }
   },
   {
@@ -1636,7 +2044,9 @@
     "longi": 17.447595,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Erragadda - narrow gully"
     }
   },
   {
@@ -1644,7 +2054,9 @@
     "longi": 17.391599,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 4,
+      "cluster": 4,
+      "name": "Koti - auto stand"
     }
   },
   {
@@ -1652,7 +2064,9 @@
     "longi": 17.434429,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Ameerpet - slum entrance"
     }
   },
   {
@@ -1660,7 +2074,9 @@
     "longi": 17.418994,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lotus Pond - market road"
     }
   },
   {
@@ -1668,7 +2084,9 @@
     "longi": 17.329564,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Aramghar - slum entrance"
     }
   },
   {
@@ -1676,7 +2094,9 @@
     "longi": 17.443645,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Madhapur - bus stop corner"
     }
   },
   {
@@ -1684,7 +2104,9 @@
     "longi": 17.484607,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kukatpally - auto stand"
     }
   },
   {
@@ -1692,7 +2114,9 @@
     "longi": 17.438474,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "SR Nagar - flyover approach"
     }
   },
   {
@@ -1700,7 +2124,9 @@
     "longi": 17.538052,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Bachupally - auto stand"
     }
   },
   {
@@ -1708,7 +2134,9 @@
     "longi": 17.446057,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Hitech City - isolated alley"
     }
   },
   {
@@ -1716,7 +2144,9 @@
     "longi": 17.33261,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Aramghar - bridge underpass"
     }
   },
   {
@@ -1724,7 +2154,9 @@
     "longi": 17.415657,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Banjara Hills - service road junction"
     }
   },
   {
@@ -1732,7 +2164,9 @@
     "longi": 17.41319,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Nanakramguda - back lane"
     }
   },
   {
@@ -1740,7 +2174,9 @@
     "longi": 17.389647,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Koti - bus terminus"
     }
   },
   {
@@ -1748,7 +2184,9 @@
     "longi": 17.441271,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "SR Nagar - parking lot"
     }
   },
   {
@@ -1756,7 +2194,9 @@
     "longi": 17.325203,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Hayathnagar - flyover underpass"
     }
   },
   {
@@ -1764,7 +2204,9 @@
     "longi": 17.498649,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Alwal - market road"
     }
   },
   {
@@ -1772,7 +2214,9 @@
     "longi": 17.465502,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kondapur - metro station exit"
     }
   },
   {
@@ -1780,7 +2224,9 @@
     "longi": 17.375109,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Afzal Gunj Bridge - fish market alley"
     }
   },
   {
@@ -1788,7 +2234,9 @@
     "longi": 17.482073,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Chandanagar - auto stand"
     }
   },
   {
@@ -1796,7 +2244,9 @@
     "longi": 17.263188,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shamshabad - bus stop corner"
     }
   },
   {
@@ -1804,7 +2254,9 @@
     "longi": 17.08017,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shadnagar - metro station exit"
     }
   },
   {
@@ -1812,7 +2264,9 @@
     "longi": 17.492471,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Chandanagar - auto stand"
     }
   },
   {
@@ -1820,7 +2274,9 @@
     "longi": 17.425125,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Raidurg - auto stand"
     }
   },
   {
@@ -1828,7 +2284,9 @@
     "longi": 17.440125,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Gachibowli - market road"
     }
   },
   {
@@ -1836,7 +2294,9 @@
     "longi": 17.36225,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Charminar - red light area"
     }
   },
   {
@@ -1844,7 +2304,9 @@
     "longi": 17.542263,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Isnapur - service road junction"
     }
   },
   {
@@ -1852,7 +2314,9 @@
     "longi": 17.441054,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "SR Nagar - metro station exit"
     }
   },
   {
@@ -1860,7 +2324,9 @@
     "longi": 17.324316,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Rajiv Gandhi Int - service road junction"
     }
   },
   {
@@ -1868,7 +2334,9 @@
     "longi": 17.523612,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Patancheru - garbage dump"
     }
   },
   {
@@ -1876,7 +2344,9 @@
     "longi": 17.421255,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Punjagutta Flyover - parking lot"
     }
   },
   {
@@ -1884,7 +2354,9 @@
     "longi": 17.541709,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kompally - isolated alley"
     }
   },
   {
@@ -1892,7 +2364,9 @@
     "longi": 17.296379,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 4,
+      "cluster": 4,
+      "name": "Rajendranagar - garbage dump"
     }
   },
   {
@@ -1900,7 +2374,9 @@
     "longi": 17.384685,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "MJ Market - bus terminus"
     }
   },
   {
@@ -1908,7 +2384,9 @@
     "longi": 17.360154,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Attapur - public toilet area"
     }
   },
   {
@@ -1916,7 +2394,9 @@
     "longi": 17.440339,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "SR Nagar - flyover approach"
     }
   },
   {
@@ -1924,7 +2404,9 @@
     "longi": 17.397229,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Uppal - bus terminus"
     }
   },
   {
@@ -1932,7 +2414,9 @@
     "longi": 17.532673,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Patancheru - flyover approach"
     }
   },
   {
@@ -1940,7 +2424,9 @@
     "longi": 17.346437,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "LB Nagar - night market road"
     }
   },
   {
@@ -1948,7 +2434,9 @@
     "longi": 17.46841,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kondapur - dead end"
     }
   },
   {
@@ -1956,7 +2444,9 @@
     "longi": 17.343824,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Bandlaguda - metro station exit"
     }
   },
   {
@@ -1964,7 +2454,9 @@
     "longi": 17.223614,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Adibatla - back lane"
     }
   },
   {
@@ -1972,7 +2464,9 @@
     "longi": 17.446199,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Borabanda - parking lot"
     }
   },
   {
@@ -1980,7 +2474,9 @@
     "longi": 17.387667,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kokapet - metro station exit"
     }
   },
   {
@@ -1988,7 +2484,9 @@
     "longi": 17.425228,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Road No 36 - slum entrance"
     }
   },
   {
@@ -1996,7 +2494,9 @@
     "longi": 17.389569,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Nampally - freight yard lane"
     }
   },
   {
@@ -2004,7 +2504,9 @@
     "longi": 17.426579,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Punjagutta Flyover - auto stand"
     }
   },
   {
@@ -2012,7 +2514,9 @@
     "longi": 17.623341,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Medchal - garbage dump"
     }
   },
   {
@@ -2020,7 +2524,9 @@
     "longi": 17.447629,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hitech City - garbage dump"
     }
   },
   {
@@ -2028,7 +2534,9 @@
     "longi": 17.480566,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Trimulgherry - public toilet area"
     }
   },
   {
@@ -2036,7 +2544,9 @@
     "longi": 17.348739,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 4,
+      "cluster": 4,
+      "name": "Vanasthalipuram - parking lot"
     }
   },
   {
@@ -2044,7 +2554,9 @@
     "longi": 17.376162,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Begum Bazar - bus terminus"
     }
   },
   {
@@ -2052,7 +2564,9 @@
     "longi": 17.396663,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Mehdipatnam - parking lot"
     }
   },
   {
@@ -2060,7 +2574,9 @@
     "longi": 17.443545,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "SR Nagar - service road junction"
     }
   },
   {
@@ -2068,7 +2584,9 @@
     "longi": 17.447478,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Begumpet - slum entrance"
     }
   },
   {
@@ -2076,7 +2594,9 @@
     "longi": 17.430044,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Punjagutta Flyover - narrow gully"
     }
   },
   {
@@ -2084,7 +2604,9 @@
     "longi": 17.453201,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Begumpet - flyover underpass"
     }
   },
   {
@@ -2092,7 +2614,9 @@
     "longi": 17.448875,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Madhapur - parking lot"
     }
   },
   {
@@ -2100,7 +2624,9 @@
     "longi": 17.398168,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Uppal - red light area"
     }
   },
   {
@@ -2108,7 +2634,9 @@
     "longi": 17.419977,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 4,
+      "cluster": 4,
+      "name": "Road No 36 - auto stand"
     }
   },
   {
@@ -2116,7 +2644,9 @@
     "longi": 17.419584,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lotus Pond - night market road"
     }
   },
   {
@@ -2124,7 +2654,9 @@
     "longi": 17.393508,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Nampally - flyover underpass"
     }
   },
   {
@@ -2132,7 +2664,9 @@
     "longi": 17.50193,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Alwal - isolated alley"
     }
   },
   {
@@ -2140,7 +2674,9 @@
     "longi": 17.327124,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Aramghar - old city backroad"
     }
   },
   {
@@ -2148,7 +2684,9 @@
     "longi": 17.303747,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Rajendranagar - narrow gully"
     }
   },
   {
@@ -2156,7 +2694,9 @@
     "longi": 17.493641,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "JNTU - flyover approach"
     }
   },
   {
@@ -2164,7 +2704,9 @@
     "longi": 17.508161,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Patancheru - service road junction"
     }
   },
   {
@@ -2172,7 +2714,9 @@
     "longi": 17.419225,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Road No 36 - metro station exit"
     }
   },
   {
@@ -2180,7 +2724,9 @@
     "longi": 17.35543,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Attapur - garbage dump"
     }
   },
   {
@@ -2188,7 +2734,9 @@
     "longi": 17.431326,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Gachibowli Gate - back lane"
     }
   },
   {
@@ -2196,7 +2744,9 @@
     "longi": 17.396027,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Mehdipatnam - fish market alley"
     }
   },
   {
@@ -2204,7 +2754,9 @@
     "longi": 17.434737,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Biodiversity Park - service road junction"
     }
   },
   {
@@ -2212,7 +2764,9 @@
     "longi": 17.43203,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Financial District - flyover underpass"
     }
   },
   {
@@ -2220,7 +2774,9 @@
     "longi": 17.45647,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kothaguda - dead end"
     }
   },
   {
@@ -2228,7 +2784,9 @@
     "longi": 17.36093,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Attapur - auto stand"
     }
   },
   {
@@ -2236,7 +2794,9 @@
     "longi": 17.527476,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kompally - bus stop corner"
     }
   },
   {
@@ -2244,7 +2804,9 @@
     "longi": 17.527605,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Patancheru - garbage dump"
     }
   },
   {
@@ -2252,7 +2814,9 @@
     "longi": 17.443778,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hitech City - garbage dump"
     }
   },
   {
@@ -2260,7 +2824,9 @@
     "longi": 17.47535,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Chandanagar - flyover approach"
     }
   },
   {
@@ -2268,7 +2834,9 @@
     "longi": 17.447443,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Madhapur - flyover approach"
     }
   },
   {
@@ -2276,7 +2844,9 @@
     "longi": 17.457403,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kothaguda - isolated alley"
     }
   },
   {
@@ -2284,7 +2854,9 @@
     "longi": 17.460633,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kothaguda - isolated alley"
     }
   },
   {
@@ -2292,7 +2864,9 @@
     "longi": 17.448782,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Borabanda - old city backroad"
     }
   },
   {
@@ -2300,7 +2874,9 @@
     "longi": 17.414583,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Banjara Hills - night market road"
     }
   },
   {
@@ -2308,7 +2884,9 @@
     "longi": 17.39583,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Mehdipatnam - bridge underpass"
     }
   },
   {
@@ -2316,7 +2894,9 @@
     "longi": 17.379694,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Begum Bazar - old city backroad"
     }
   },
   {
@@ -2324,7 +2904,9 @@
     "longi": 17.518757,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jeedimetla - isolated alley"
     }
   },
   {
@@ -2332,7 +2914,9 @@
     "longi": 17.490859,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "JNTU - metro station exit"
     }
   },
   {
@@ -2340,7 +2924,9 @@
     "longi": 17.419339,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Road No 36 - public toilet area"
     }
   },
   {
@@ -2348,7 +2934,9 @@
     "longi": 17.343811,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Bandlaguda - metro station exit"
     }
   },
   {
@@ -2356,7 +2944,9 @@
     "longi": 17.497174,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Miyapur - metro station exit"
     }
   },
   {
@@ -2364,7 +2954,9 @@
     "longi": 17.533949,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kompally - public toilet area"
     }
   },
   {
@@ -2372,7 +2964,9 @@
     "longi": 17.422096,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "KBR Park - night market road"
     }
   },
   {
@@ -2380,7 +2974,9 @@
     "longi": 17.06877,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Shadnagar - metro station exit"
     }
   },
   {
@@ -2388,7 +2984,9 @@
     "longi": 17.262719,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ibrahimpatnam - bus stop corner"
     }
   },
   {
@@ -2396,7 +2994,9 @@
     "longi": 17.329168,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hayathnagar - auto stand"
     }
   },
   {
@@ -2404,7 +3004,9 @@
     "longi": 17.509281,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Patancheru - market road"
     }
   },
   {
@@ -2412,7 +3014,9 @@
     "longi": 17.387093,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "MJ Market - bus stop corner"
     }
   },
   {
@@ -2420,7 +3024,9 @@
     "longi": 17.230024,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Adibatla - isolated alley"
     }
   },
   {
@@ -2428,7 +3034,9 @@
     "longi": 17.392454,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Abids - flyover underpass"
     }
   },
   {
@@ -2436,7 +3044,9 @@
     "longi": 17.520438,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jeedimetla - back lane"
     }
   },
   {
@@ -2444,7 +3054,9 @@
     "longi": 17.364456,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Attapur - bus stop corner"
     }
   },
   {
@@ -2452,7 +3064,9 @@
     "longi": 17.506779,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Alwal - back lane"
     }
   },
   {
@@ -2460,7 +3074,9 @@
     "longi": 17.496004,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Miyapur - metro station exit"
     }
   },
   {
@@ -2468,7 +3084,9 @@
     "longi": 17.323767,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Rajiv Gandhi Int - parking lot"
     }
   },
   {
@@ -2476,7 +3094,9 @@
     "longi": 17.422316,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Raidurg - flyover approach"
     }
   },
   {
@@ -2484,7 +3104,9 @@
     "longi": 17.37882,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Begum Bazar - railway station outside"
     }
   },
   {
@@ -2492,7 +3114,9 @@
     "longi": 17.349299,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "LB Nagar - bridge underpass"
     }
   },
   {
@@ -2500,7 +3124,9 @@
     "longi": 17.327428,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Rajiv Gandhi Int - isolated alley"
     }
   },
   {
@@ -2508,7 +3134,9 @@
     "longi": 17.549227,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Kompally - public toilet area"
     }
   },
   {
@@ -2516,7 +3144,9 @@
     "longi": 17.350116,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "LB Nagar - bus terminus"
     }
   },
   {
@@ -2524,7 +3154,9 @@
     "longi": 17.385728,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 4,
+      "cluster": 4,
+      "name": "MJ Market - railway station outside"
     }
   },
   {
@@ -2532,7 +3164,9 @@
     "longi": 17.341673,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Bandlaguda - metro station exit"
     }
   },
   {
@@ -2540,7 +3174,9 @@
     "longi": 17.44781,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Borabanda - garbage dump"
     }
   },
   {
@@ -2548,7 +3184,9 @@
     "longi": 17.534838,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Bachupally - bus stop corner"
     }
   },
   {
@@ -2556,7 +3194,9 @@
     "longi": 17.387156,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Koti - old city backroad"
     }
   },
   {
@@ -2564,7 +3204,9 @@
     "longi": 17.434086,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Rathifile - red light area"
     }
   },
   {
@@ -2572,7 +3214,9 @@
     "longi": 18.099481,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Siddipet Town - service road junction"
     }
   },
   {
@@ -2580,7 +3224,9 @@
     "longi": 17.44542,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Madhapur - bus terminus"
     }
   },
   {
@@ -2588,7 +3234,9 @@
     "longi": 17.375063,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Malakpet - old city backroad"
     }
   },
   {
@@ -2596,7 +3244,9 @@
     "longi": 17.436114,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Financial District - auto stand"
     }
   },
   {
@@ -2604,7 +3254,9 @@
     "longi": 17.393771,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Nampally - public toilet area"
     }
   },
   {
@@ -2612,7 +3264,9 @@
     "longi": 17.501958,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Alwal - service road junction"
     }
   },
   {
@@ -2620,7 +3274,9 @@
     "longi": 17.366917,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Charminar - bridge underpass"
     }
   },
   {
@@ -2628,7 +3284,9 @@
     "longi": 17.369025,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Dilsukhnagar - public toilet area"
     }
   },
   {
@@ -2636,7 +3294,9 @@
     "longi": 17.446679,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Borabanda - old city backroad"
     }
   },
   {
@@ -2644,7 +3304,9 @@
     "longi": 17.362701,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lad Bazar - night market road"
     }
   },
   {
@@ -2652,7 +3314,9 @@
     "longi": 17.424159,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "KBR Park - isolated alley"
     }
   },
   {
@@ -2660,7 +3324,9 @@
     "longi": 17.418699,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "GVK One Back Lane - garbage dump"
     }
   },
   {
@@ -2668,7 +3334,9 @@
     "longi": 17.264805,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Tukkuguda - dead end"
     }
   },
   {
@@ -2676,7 +3344,9 @@
     "longi": 17.379115,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Malakpet - slum entrance"
     }
   },
   {
@@ -2684,7 +3354,9 @@
     "longi": 17.522716,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Patancheru - bus terminus"
     }
   },
   {
@@ -2692,7 +3364,9 @@
     "longi": 17.38711,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Abids - bridge underpass"
     }
   },
   {
@@ -2700,7 +3374,9 @@
     "longi": 17.447932,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Borabanda - freight yard lane"
     }
   },
   {
@@ -2708,7 +3384,9 @@
     "longi": 17.493011,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kukatpally - market road"
     }
   },
   {
@@ -2716,7 +3394,9 @@
     "longi": 17.437791,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Secunderabad - freight yard lane"
     }
   },
   {
@@ -2724,7 +3404,9 @@
     "longi": 17.435855,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Biodiversity Park - flyover approach"
     }
   },
   {
@@ -2732,7 +3414,9 @@
     "longi": 17.229034,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Adibatla - back lane"
     }
   },
   {
@@ -2740,7 +3424,9 @@
     "longi": 17.430582,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Biodiversity Park - market road"
     }
   },
   {
@@ -2748,7 +3434,9 @@
     "longi": 17.448092,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Madhapur - auto stand"
     }
   },
   {
@@ -2756,7 +3444,9 @@
     "longi": 17.444606,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Ghatkesar - garbage dump"
     }
   },
   {
@@ -2764,7 +3454,9 @@
     "longi": 17.368802,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Malakpet - auto stand"
     }
   },
   {
@@ -2772,7 +3464,9 @@
     "longi": 17.434645,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Biodiversity Park - flyover approach"
     }
   },
   {
@@ -2780,7 +3474,9 @@
     "longi": 17.418799,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "KBR Park - parking lot"
     }
   },
   {
@@ -2788,7 +3484,9 @@
     "longi": 17.430382,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Financial District - public toilet area"
     }
   },
   {
@@ -2796,7 +3494,9 @@
     "longi": 17.388045,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kokapet - isolated alley"
     }
   },
   {
@@ -2804,7 +3504,9 @@
     "longi": 17.304666,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Rajendranagar - bus terminus"
     }
   },
   {
@@ -2812,7 +3514,9 @@
     "longi": 17.254397,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shamshabad - service road junction"
     }
   },
   {
@@ -2820,7 +3524,9 @@
     "longi": 17.445608,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Begumpet - market road"
     }
   },
   {
@@ -2828,7 +3534,9 @@
     "longi": 17.362108,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lad Bazar - auto stand"
     }
   },
   {
@@ -2836,7 +3544,9 @@
     "longi": 17.382902,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "MJ Market - market road"
     }
   },
   {
@@ -2844,7 +3554,9 @@
     "longi": 17.335946,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Meerpet - narrow gully"
     }
   },
   {
@@ -2852,7 +3564,9 @@
     "longi": 17.540482,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Isnapur - bus stop corner"
     }
   },
   {
@@ -2860,7 +3574,9 @@
     "longi": 17.408297,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Manikonda - railway station outside"
     }
   },
   {
@@ -2868,7 +3584,9 @@
     "longi": 17.319507,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Hayathnagar - parking lot"
     }
   },
   {
@@ -2876,7 +3594,9 @@
     "longi": 17.383711,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Narsingi - bus stop corner"
     }
   },
   {
@@ -2884,7 +3604,9 @@
     "longi": 17.428498,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Gachibowli Gate - market road"
     }
   },
   {
@@ -2892,7 +3614,9 @@
     "longi": 17.353474,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Charminar - old city backroad"
     }
   },
   {
@@ -2900,7 +3624,9 @@
     "longi": 17.433803,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jubilee Hills - service road junction"
     }
   },
   {
@@ -2908,7 +3634,9 @@
     "longi": 17.426301,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Ghatkesar - market road"
     }
   },
   {
@@ -2916,7 +3644,9 @@
     "longi": 17.431578,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Gachibowli Gate - isolated alley"
     }
   },
   {
@@ -2924,7 +3654,9 @@
     "longi": 17.486079,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kukatpally - slum entrance"
     }
   },
   {
@@ -2932,7 +3664,9 @@
     "longi": 17.493226,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "JNTU - market road"
     }
   },
   {
@@ -2940,7 +3674,9 @@
     "longi": 17.436555,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Secunderabad - narrow gully"
     }
   },
   {
@@ -2948,7 +3684,9 @@
     "longi": 17.509818,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Patancheru - auto stand"
     }
   },
   {
@@ -2956,7 +3694,9 @@
     "longi": 17.509522,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Patancheru - garbage dump"
     }
   },
   {
@@ -2964,7 +3704,9 @@
     "longi": 17.427344,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Raidurg - metro station exit"
     }
   },
   {
@@ -2972,7 +3714,9 @@
     "longi": 17.483261,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Chandanagar - isolated alley"
     }
   },
   {
@@ -2980,7 +3724,9 @@
     "longi": 17.635714,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Medchal - flyover approach"
     }
   },
   {
@@ -2988,7 +3734,9 @@
     "longi": 17.335477,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Meerpet - public toilet area"
     }
   },
   {
@@ -2996,7 +3744,9 @@
     "longi": 17.382207,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Narsingi - market road"
     }
   },
   {
@@ -3004,7 +3754,9 @@
     "longi": 17.2943,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Rajendranagar - market road"
     }
   },
   {
@@ -3012,7 +3764,9 @@
     "longi": 17.303958,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Rajendranagar - metro station exit"
     }
   },
   {
@@ -3020,7 +3774,9 @@
     "longi": 17.421848,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Jubilee Hills - night market road"
     }
   },
   {
@@ -3028,7 +3784,9 @@
     "longi": 17.080066,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Shadnagar - railway station outside"
     }
   },
   {
@@ -3036,7 +3794,9 @@
     "longi": 17.413024,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Nanakramguda - isolated alley"
     }
   },
   {
@@ -3044,7 +3804,9 @@
     "longi": 17.388252,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Nagole - flyover approach"
     }
   },
   {
@@ -3052,7 +3814,9 @@
     "longi": 17.392714,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Nampally - old city backroad"
     }
   },
   {
@@ -3060,7 +3824,9 @@
     "longi": 17.413476,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Nanakramguda - dead end"
     }
   },
   {
@@ -3068,7 +3834,9 @@
     "longi": 17.361004,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 4,
+      "cluster": 4,
+      "name": "Attapur - slum entrance"
     }
   },
   {
@@ -3076,7 +3844,9 @@
     "longi": 17.359051,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Attapur - flyover underpass"
     }
   },
   {
@@ -3084,7 +3854,9 @@
     "longi": 17.464614,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Balanagar - garbage dump"
     }
   },
   {
@@ -3092,7 +3864,9 @@
     "longi": 17.23656,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Adibatla - service road junction"
     }
   },
   {
@@ -3100,7 +3874,9 @@
     "longi": 17.41853,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "KBR Park - back lane"
     }
   },
   {
@@ -3108,7 +3884,9 @@
     "longi": 17.375013,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Afzal Gunj Bridge - flyover underpass"
     }
   },
   {
@@ -3116,7 +3894,9 @@
     "longi": 17.491422,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Miyapur - market road"
     }
   },
   {
@@ -3124,7 +3904,9 @@
     "longi": 17.548278,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Kompally - parking lot"
     }
   },
   {
@@ -3132,7 +3914,9 @@
     "longi": 17.481493,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Trimulgherry - dead end"
     }
   },
   {
@@ -3140,7 +3924,9 @@
     "longi": 17.415981,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Banjara Hills - dead end"
     }
   },
   {
@@ -3148,7 +3934,9 @@
     "longi": 17.073677,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shadnagar - parking lot"
     }
   },
   {
@@ -3156,7 +3944,9 @@
     "longi": 17.428335,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Punjagutta Flyover - fish market alley"
     }
   },
   {
@@ -3164,7 +3954,9 @@
     "longi": 17.432663,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Boduppal - parking lot"
     }
   },
   {
@@ -3172,7 +3964,9 @@
     "longi": 17.428853,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Punjagutta Flyover - old city backroad"
     }
   },
   {
@@ -3180,7 +3974,9 @@
     "longi": 17.254139,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ibrahimpatnam - dead end"
     }
   },
   {
@@ -3188,7 +3984,9 @@
     "longi": 17.323353,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hayathnagar - narrow gully"
     }
   },
   {
@@ -3196,7 +3994,9 @@
     "longi": 17.622495,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Sangareddy - auto stand"
     }
   },
   {
@@ -3204,7 +4004,9 @@
     "longi": 17.507551,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Miyapur - parking lot"
     }
   },
   {
@@ -3212,7 +4014,9 @@
     "longi": 17.404105,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Uppal - parking lot"
     }
   },
   {
@@ -3220,7 +4024,9 @@
     "longi": 17.368725,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Charminar - old city backroad"
     }
   },
   {
@@ -3228,7 +4034,9 @@
     "longi": 18.103265,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Siddipet Town - parking lot"
     }
   },
   {
@@ -3236,7 +4044,9 @@
     "longi": 17.268668,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Shamshabad - service road junction"
     }
   },
   {
@@ -3244,7 +4054,9 @@
     "longi": 17.338045,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 1,
+      "cluster": 0,
+      "name": "LB Nagar - bridge underpass"
     }
   },
   {
@@ -3252,7 +4064,9 @@
     "longi": 17.475853,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Chandanagar - parking lot"
     }
   },
   {
@@ -3260,7 +4074,9 @@
     "longi": 17.548815,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Kompally - public toilet area"
     }
   },
   {
@@ -3268,7 +4084,9 @@
     "longi": 17.4894,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 4,
+      "cluster": 4,
+      "name": "JNTU - garbage dump"
     }
   },
   {
@@ -3276,7 +4094,9 @@
     "longi": 17.329396,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Rajiv Gandhi Int - garbage dump"
     }
   },
   {
@@ -3284,7 +4104,9 @@
     "longi": 17.389998,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Koti - old city backroad"
     }
   },
   {
@@ -3292,7 +4114,9 @@
     "longi": 17.404981,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Manikonda - flyover approach"
     }
   },
   {
@@ -3300,7 +4124,9 @@
     "longi": 17.439718,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Rathifile - red light area"
     }
   },
   {
@@ -3308,7 +4134,9 @@
     "longi": 17.458012,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kothaguda - parking lot"
     }
   },
   {
@@ -3316,7 +4144,9 @@
     "longi": 17.376783,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Malakpet - night market road"
     }
   },
   {
@@ -3324,7 +4154,9 @@
     "longi": 17.350165,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Vanasthalipuram - flyover approach"
     }
   },
   {
@@ -3332,7 +4164,9 @@
     "longi": 17.389564,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Nampally - parking lot"
     }
   },
   {
@@ -3340,7 +4174,9 @@
     "longi": 17.469022,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Balanagar - public toilet area"
     }
   },
   {
@@ -3348,7 +4184,9 @@
     "longi": 17.451386,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Erragadda - metro station exit"
     }
   },
   {
@@ -3356,7 +4194,9 @@
     "longi": 18.09804,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Siddipet Town - parking lot"
     }
   },
   {
@@ -3364,7 +4204,9 @@
     "longi": 17.441859,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Secunderabad - public toilet area"
     }
   },
   {
@@ -3372,7 +4214,9 @@
     "longi": 17.485175,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Trimulgherry - parking lot"
     }
   },
   {
@@ -3380,7 +4224,9 @@
     "longi": 17.38807,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Nampally - parking lot"
     }
   },
   {
@@ -3388,7 +4234,9 @@
     "longi": 17.421685,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Raidurg - night market road"
     }
   },
   {
@@ -3396,7 +4244,9 @@
     "longi": 17.443293,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Paradise Circle - old city backroad"
     }
   },
   {
@@ -3404,7 +4254,9 @@
     "longi": 17.391077,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kokapet - bus stop corner"
     }
   },
   {
@@ -3412,7 +4264,9 @@
     "longi": 17.258231,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ibrahimpatnam - parking lot"
     }
   },
   {
@@ -3420,7 +4274,9 @@
     "longi": 17.484184,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Trimulgherry - bus stop corner"
     }
   },
   {
@@ -3428,7 +4284,9 @@
     "longi": 17.447828,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Secunderabad - fish market alley"
     }
   },
   {
@@ -3436,7 +4294,9 @@
     "longi": 17.361437,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lad Bazar - narrow gully"
     }
   },
   {
@@ -3444,7 +4304,9 @@
     "longi": 17.485847,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kukatpally - auto stand"
     }
   },
   {
@@ -3452,7 +4314,9 @@
     "longi": 17.374863,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Afzal Gunj Bridge - narrow gully"
     }
   },
   {
@@ -3460,7 +4324,9 @@
     "longi": 17.303685,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Rajendranagar - railway station outside"
     }
   },
   {
@@ -3468,7 +4334,9 @@
     "longi": 17.263182,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Tukkuguda - back lane"
     }
   },
   {
@@ -3476,7 +4344,9 @@
     "longi": 17.420259,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Road No 36 - public toilet area"
     }
   },
   {
@@ -3484,7 +4354,9 @@
     "longi": 17.552006,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Kompally - metro station exit"
     }
   },
   {
@@ -3492,7 +4364,9 @@
     "longi": 17.376092,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Begum Bazar - railway station outside"
     }
   },
   {
@@ -3500,7 +4374,9 @@
     "longi": 17.432456,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 3,
+      "cluster": 2,
+      "name": "Ameerpet - freight yard lane"
     }
   },
   {
@@ -3508,7 +4384,9 @@
     "longi": 17.263134,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Tukkuguda - public toilet area"
     }
   },
   {
@@ -3516,7 +4394,9 @@
     "longi": 17.432954,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Biodiversity Park - back lane"
     }
   },
   {
@@ -3524,7 +4404,9 @@
     "longi": 17.41744,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Lotus Pond - bus terminus"
     }
   },
   {
@@ -3532,7 +4414,9 @@
     "longi": 17.415869,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lotus Pond - garbage dump"
     }
   },
   {
@@ -3540,7 +4424,9 @@
     "longi": 17.4466,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 4,
+      "cluster": 4,
+      "name": "Paradise Circle - bus terminus"
     }
   },
   {
@@ -3548,7 +4434,9 @@
     "longi": 17.413081,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Nanakramguda - back lane"
     }
   },
   {
@@ -3556,7 +4444,9 @@
     "longi": 17.46359,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Balanagar - garbage dump"
     }
   },
   {
@@ -3564,7 +4454,9 @@
     "longi": 17.219908,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Tukkuguda - parking lot"
     }
   },
   {
@@ -3572,7 +4464,9 @@
     "longi": 17.273065,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Shamshabad - metro station exit"
     }
   },
   {
@@ -3580,7 +4474,9 @@
     "longi": 17.23204,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Adibatla - market road"
     }
   },
   {
@@ -3588,7 +4484,9 @@
     "longi": 17.355792,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Charminar - railway station outside"
     }
   },
   {
@@ -3596,7 +4494,9 @@
     "longi": 17.443401,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Secunderabad - auto stand"
     }
   },
   {
@@ -3604,7 +4504,9 @@
     "longi": 17.407647,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Manikonda - flyover underpass"
     }
   },
   {
@@ -3612,7 +4514,9 @@
     "longi": 17.443147,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Paradise Circle - railway station outside"
     }
   },
   {
@@ -3620,7 +4524,9 @@
     "longi": 17.220317,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Tukkuguda - night market road"
     }
   },
   {
@@ -3628,7 +4534,9 @@
     "longi": 17.492165,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "JNTU - flyover approach"
     }
   },
   {
@@ -3636,7 +4544,9 @@
     "longi": 17.536993,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 4,
+      "cluster": 4,
+      "name": "Bachupally - auto stand"
     }
   },
   {
@@ -3644,7 +4554,9 @@
     "longi": 17.433163,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 4,
+      "cluster": 4,
+      "name": "Financial District - bus terminus"
     }
   },
   {
@@ -3652,7 +4564,9 @@
     "longi": 17.457033,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kothaguda - flyover approach"
     }
   },
   {
@@ -3660,7 +4574,9 @@
     "longi": 17.373517,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Dilsukhnagar - garbage dump"
     }
   },
   {
@@ -3668,7 +4584,9 @@
     "longi": 17.446415,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Paradise Circle - slum entrance"
     }
   },
   {
@@ -3676,7 +4594,9 @@
     "longi": 17.521673,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jeedimetla - market road"
     }
   },
   {
@@ -3684,7 +4604,9 @@
     "longi": 17.515105,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Jeedimetla - night market road"
     }
   },
   {
@@ -3692,7 +4614,9 @@
     "longi": 17.39156,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Narsingi - auto stand"
     }
   },
   {
@@ -3700,7 +4624,9 @@
     "longi": 17.37486,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Nagole - isolated alley"
     }
   },
   {
@@ -3708,7 +4634,9 @@
     "longi": 17.544443,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Bachupally - metro station exit"
     }
   },
   {
@@ -3716,7 +4644,9 @@
     "longi": 17.34168,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Bandlaguda - parking lot"
     }
   },
   {
@@ -3724,7 +4654,9 @@
     "longi": 17.517588,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Jeedimetla - metro station exit"
     }
   },
   {
@@ -3732,7 +4664,9 @@
     "longi": 17.331974,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Meerpet - flyover approach"
     }
   },
   {
@@ -3740,7 +4674,9 @@
     "longi": 17.417861,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "GVK One Back Lane - isolated alley"
     }
   },
   {
@@ -3748,7 +4684,9 @@
     "longi": 17.537515,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Bachupally - parking lot"
     }
   },
   {
@@ -3756,7 +4694,9 @@
     "longi": 17.373729,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Afzal Gunj Bridge - slum entrance"
     }
   },
   {
@@ -3764,7 +4704,9 @@
     "longi": 18.108423,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Siddipet Town - garbage dump"
     }
   },
   {
@@ -3772,7 +4714,9 @@
     "longi": 17.378347,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Begum Bazar - freight yard lane"
     }
   },
   {
@@ -3780,7 +4724,9 @@
     "longi": 17.432787,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Boduppal - market road"
     }
   },
   {
@@ -3788,7 +4734,9 @@
     "longi": 17.333573,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Aramghar - flyover underpass"
     }
   },
   {
@@ -3796,7 +4744,9 @@
     "longi": 17.24941,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ibrahimpatnam - bus stop corner"
     }
   },
   {
@@ -3804,7 +4754,9 @@
     "longi": 17.237993,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Adibatla - back lane"
     }
   },
   {
@@ -3812,7 +4764,9 @@
     "longi": 17.485021,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Chandanagar - back lane"
     }
   },
   {
@@ -3820,7 +4774,9 @@
     "longi": 17.445506,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ghatkesar - isolated alley"
     }
   },
   {
@@ -3828,7 +4784,9 @@
     "longi": 17.321873,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Hayathnagar - flyover approach"
     }
   },
   {
@@ -3836,7 +4794,9 @@
     "longi": 18.103267,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Siddipet Town - service road junction"
     }
   },
   {
@@ -3844,7 +4804,9 @@
     "longi": 17.334262,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Hayathnagar - parking lot"
     }
   },
   {
@@ -3852,7 +4814,9 @@
     "longi": 17.631467,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Medchal - market road"
     }
   },
   {
@@ -3860,7 +4824,9 @@
     "longi": 17.420259,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Road No 36 - railway station outside"
     }
   },
   {
@@ -3868,7 +4834,9 @@
     "longi": 17.391165,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Abids - fish market alley"
     }
   },
   {
@@ -3876,7 +4844,9 @@
     "longi": 17.359564,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Attapur - bus stop corner"
     }
   },
   {
@@ -3884,7 +4854,9 @@
     "longi": 17.430627,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Financial District - flyover underpass"
     }
   },
   {
@@ -3892,7 +4864,9 @@
     "longi": 17.44138,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Gachibowli - bus stop corner"
     }
   },
   {
@@ -3900,7 +4874,9 @@
     "longi": 17.392632,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Abids - bus terminus"
     }
   },
   {
@@ -3908,7 +4884,9 @@
     "longi": 17.40461,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Manikonda - flyover underpass"
     }
   },
   {
@@ -3916,7 +4894,9 @@
     "longi": 17.425471,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Ghatkesar - isolated alley"
     }
   },
   {
@@ -3924,7 +4904,9 @@
     "longi": 17.343881,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Bandlaguda - slum entrance"
     }
   },
   {
@@ -3932,7 +4914,9 @@
     "longi": 17.324761,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Rajiv Gandhi Int - garbage dump"
     }
   },
   {
@@ -3940,7 +4924,9 @@
     "longi": 17.442774,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Paradise Circle - fish market alley"
     }
   },
   {
@@ -3948,7 +4934,9 @@
     "longi": 17.469003,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kondapur - isolated alley"
     }
   },
   {
@@ -3956,7 +4944,9 @@
     "longi": 17.460342,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Kothaguda - metro station exit"
     }
   },
   {
@@ -3964,7 +4954,9 @@
     "longi": 17.448132,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Gachibowli - night market road"
     }
   },
   {
@@ -3972,7 +4964,9 @@
     "longi": 17.335277,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 2,
+      "cluster": 3,
+      "name": "Aramghar - red light area"
     }
   },
   {
@@ -3980,7 +4974,9 @@
     "longi": 17.38193,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Nagole - market road"
     }
   },
   {
@@ -3988,7 +4984,9 @@
     "longi": 17.37756,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Afzal Gunj Bridge - bus terminus"
     }
   },
   {
@@ -3996,7 +4994,9 @@
     "longi": 17.409018,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "ORR Nanakramguda - market road"
     }
   },
   {
@@ -4004,7 +5004,9 @@
     "longi": 17.349972,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Vanasthalipuram - metro station exit"
     }
   },
   {
@@ -4012,7 +5014,9 @@
     "longi": 17.365031,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Charminar - fish market alley"
     }
   },
   {
@@ -4020,7 +5024,9 @@
     "longi": 17.391193,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Narsingi - parking lot"
     }
   },
   {
@@ -4028,7 +5034,9 @@
     "longi": 17.431896,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Jubilee Hills - flyover approach"
     }
   },
   {
@@ -4036,7 +5044,9 @@
     "longi": 17.426605,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Punjagutta Flyover - narrow gully"
     }
   },
   {
@@ -4044,7 +5054,9 @@
     "longi": 17.616071,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 1,
+      "cluster": 0,
+      "name": "Sangareddy - night market road"
     }
   },
   {
@@ -4052,7 +5064,9 @@
     "longi": 17.449311,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Erragadda - flyover approach"
     }
   },
   {
@@ -4060,7 +5074,9 @@
     "longi": 17.498096,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "JNTU - bus stop corner"
     }
   },
   {
@@ -4068,7 +5084,9 @@
     "longi": 17.222365,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Tukkuguda - market road"
     }
   },
   {
@@ -4076,7 +5094,9 @@
     "longi": 17.511939,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Patancheru - metro station exit"
     }
   },
   {
@@ -4084,7 +5104,9 @@
     "longi": 17.427119,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 0,
+      "cluster": 1,
+      "name": "Biodiversity Park - bus stop corner"
     }
   },
   {
@@ -4092,7 +5114,9 @@
     "longi": 17.383611,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Nagole - isolated alley"
     }
   },
   {
@@ -4100,7 +5124,9 @@
     "longi": 17.082196,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Shadnagar - slum entrance"
     }
   },
   {
@@ -4108,7 +5134,9 @@
     "longi": 17.220924,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Tukkuguda - back lane"
     }
   },
   {
@@ -4116,7 +5144,9 @@
     "longi": 17.387768,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Mehdipatnam - slum entrance"
     }
   },
   {
@@ -4124,7 +5154,9 @@
     "longi": 17.418042,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "GVK One Back Lane - garbage dump"
     }
   },
   {
@@ -4132,7 +5164,9 @@
     "longi": 17.461161,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Kondapur - service road junction"
     }
   },
   {
@@ -4140,7 +5174,9 @@
     "longi": 17.413572,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 3,
+      "cluster": 2,
+      "name": "Lotus Pond - narrow gully"
     }
   },
   {
@@ -4148,7 +5184,9 @@
     "longi": 17.353027,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "LB Nagar - narrow gully"
     }
   },
   {
@@ -4156,7 +5194,9 @@
     "longi": 17.363854,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 1,
+      "cluster": 0,
+      "name": "Lad Bazar - slum entrance"
     }
   },
   {
@@ -4164,7 +5204,9 @@
     "longi": 17.447631,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Borabanda - flyover underpass"
     }
   },
   {
@@ -4172,7 +5214,9 @@
     "longi": 17.382357,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Nagole - service road junction"
     }
   },
   {
@@ -4180,7 +5224,9 @@
     "longi": 17.422368,
     "type": "Feature",
     "properties": {
-      "mag": 4
+      "mag": 4,
+      "cluster": 4,
+      "name": "Punjagutta Flyover - freight yard lane"
     }
   },
   {
@@ -4188,7 +5234,9 @@
     "longi": 17.431017,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "ORR Gachibowli Gate - service road junction"
     }
   },
   {
@@ -4196,7 +5244,9 @@
     "longi": 17.441006,
     "type": "Feature",
     "properties": {
-      "mag": 0
+      "mag": 0,
+      "cluster": 1,
+      "name": "Ghatkesar - service road junction"
     }
   },
   {
@@ -4204,7 +5254,9 @@
     "longi": 17.348676,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "LB Nagar - slum entrance"
     }
   },
   {
@@ -4212,7 +5264,9 @@
     "longi": 17.369222,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Dilsukhnagar - slum entrance"
     }
   },
   {
@@ -4220,7 +5274,9 @@
     "longi": 17.389083,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 2,
+      "cluster": 3,
+      "name": "Abids - public toilet area"
     }
   },
   {
@@ -4228,7 +5284,9 @@
     "longi": 17.388398,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Koti - parking lot"
     }
   },
   {
@@ -4236,7 +5294,9 @@
     "longi": 17.441672,
     "type": "Feature",
     "properties": {
-      "mag": 1
+      "mag": 1,
+      "cluster": 0,
+      "name": "Ghatkesar - bus stop corner"
     }
   },
   {
@@ -4244,7 +5304,9 @@
     "longi": 17.389181,
     "type": "Feature",
     "properties": {
-      "mag": 2
+      "mag": 0,
+      "cluster": 1,
+      "name": "Mehdipatnam - auto stand"
     }
   },
   {
@@ -4252,7 +5314,9 @@
     "longi": 17.426067,
     "type": "Feature",
     "properties": {
-      "mag": 3
+      "mag": 2,
+      "cluster": 3,
+      "name": "Boduppal - bus terminus"
     }
   }
 ]
