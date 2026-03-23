@@ -1,29 +1,24 @@
-# Safe Path Recommender Based on Crime Statistics of Delhi NCR
+# Safe Path Recommender - Hyderabad & GHMC
 Because you must look before you leave!
 
 
 We are going to address the issue of safety in our project named ‘Safe Path Recommender’.
 
-Delhi, national capital of India, is a hub for murder, kidnapping and abduction, juveniles in conflict and economic offences. Delhi tops the list of IPC crimes according to the National Crimes Records Bureau (NCRB). Among the top 19 cities, Delhi accounts for 38.8% of the crimes.
-People walk on the streets but they are not safe, back from work, parties, late night dinners, parks, etc. and even coffee shops and different shopping or grocery stores during the day, children walk back from school and tuitions. Like any metropolitan city might have some spots as safe and others not, Delhi has them too. People should be able to judge whether a specific area or neighborhood is safe from possible crimes or not at a certain time of day. We have done this research on a web app which tells the safest route using crime data of Delhi Ncr to reach the desired destination SAFE!
-
+Hyderabad, a major IT and industrial hub in South India, encompasses the GHMC area and the surrounding Ranga Reddy district. As urban sprawl continues, the density and distribution of micro-level crimes like theft, harassment, and robberies change across the city.
+People walk on the streets but they are not safe, back from work, parties, late night dinners, parks, and even shopping centers. Our web app helps users judge the safety of a specific neighborhood or route in real-time. We have mapped 500+ micro-level data points across Hyderabad including Hitech City, Madhapur, Mehdipatnam, Uppal, LB Nagar, and the Outer Ring Road (ORR) corridor!
 
 ## Our solution to the problem:
-
-Google Maps app give the fastest route between two points without even considering security but our web app in the research finds the safest route by considering the danger index of the possible paths.To test the app, we further created “Dummy” Crime data for Noida and Gurgaon as well. Now, the research is done considering Delhi, Gurgaon and Noida in specific where crime rates have been alarmingly high, as compared to the other states.
+Google Maps provides the fastest route without considering security. Our web app calculates the safest route by evaluating the danger index along possible paths. Our custom data covers the entire GHMC and Ranga Reddy district precisely.
 
 
 ## Technical concept used:
-
-We have applied above Unsupervised Machine Learning Algorithm, K-means clustering to find danger index of the many possible paths between two places (starting and destination locations) assigning a magnitude of  criminal activities on the  map  of  Delhi Ncr (Delhi, Noida & Gurgaon)  in range of 0 to 4. We used Google map and Google Places Apis to display all possible routes between any two locations A & B.
-* Firstly, Danger Index of the different possible paths to a destination has been calculated to compare the safest paths out of the total paths considered. 
-* An autocomplete feature in the search boxes of the starting and destination locations is introduced so that user does not have to type the whole address and the drop down list emerges as other alternative suggestions for a user to pick from a varied list of places. 
-* The functionality of the choice for the user to pick from different mode of travel has been introduced ie. Walking, Transit and Driving.
-* Markers have been placed on all the possible paths to indicate the Danger Index associated with the path ie. Smiley: safest, Green Tick: moderately safe, Exclamation Mark Triangle: be careful, Skull: moderately dangerous and Cross: extremely dangerous.
-* Statistics of the Safety of paths in the form of detailed information is output below the map so that user also knows what all things he has to consider while making his choice to make smart decisions like Distance, Time Duration, Danger Index, Route Number, and Color of the Route.
-* We have divided the backend using MongoDB into a distributed database into 4 nodes representing 4 zones of Indian map - East, West, North and South. 
-* Having a distributed database gives us the advantage of fault tolerance over regular databases, in case of failure of a node, other nodes can still access the crime data which is possible because of replica sets. 
-* In the “Crime in Delhi” dataset we have used Google Maps Reverse Geocoding Api using the longitudes and lattitudes from the dataset to be more precise. In the “Crime in India” dataset we have used Google Maps Api using the names of the districts. Google Apis used:
+We have applied the K-means clustering algorithm to find the danger index of many possible paths. We mapped 532 micro-level locations across Hyderabad assigning a magnitude of criminal activity in the range of 0 to 4. We use Google Maps and Google Places APIs to display all possible routes and calculate safety.
+* **Danger Index**: Calculates safety for multiple paths and recommends the best one.
+* **Autocomplete**: Integrated Google Places for easy location entry.
+* **Travel Modes**: Support for Walking, Transit, and Driving.
+* **Visual Markers**: Map hotspots indicate risk level (Green Tick to Red Skull).
+* **Distributed Backend**: Uses Express, MongoDB, and Socket.IO for real-time GPS tracking and danger alerts.
+* **Automation**: Python scripts for micro-level data generation and K-Means processing.
   *	Google Maps JavaScript API
   *	Google Maps Embed API
   *	Google Maps Directions API

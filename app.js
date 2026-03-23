@@ -9,6 +9,7 @@ require('dotenv').config();
 
 const connectDB = require('./config/db');
 const routeService = require('./services/routeService');
+const User = require('./models/User'); // Import User model
 
 const app = express();
 const server = http.createServer(app);
@@ -42,31 +43,43 @@ app.get('/login', (req, res) => res.render('login'));
 app.get('/signup', (req, res) => res.render('signup'));
 app.get('/maps', (req, res) => res.render('maps'));
 
-// ── Auth Routes (file-based, unchanged from main) ──────────────────────────
-const USERS_FILE = path.join(__dirname, 'data', 'users.json');
-
-app.post('/signup', (req, res) => {
-  const { username, password } = req.body;
-  if (!username || !password) return res.status(400).send('Username and password required');
-  let users = fs.existsSync(USERS_FILE) ? JSON.parse(fs.readFileSync(USERS_FILE, 'utf8')) : [];
-  if (users.find(u => u.username === username)) return res.status(400).send('User already exists');
-  users.push({ username, password });
-  fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
-  res.redirect('/login');
+// ── Auth Routes (MongoDB based) ──────────────────────────────────────────
+app.post('/signup', async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    if (!username || !password) return res.status(400).send('Username and password required');
+    
+    const existingUser = await User.findOne({ username });
+    if (existingUser) return res.status(400).send('User already exists');
+    
+    const newUser = new User({ username, password }); // In a real app, hash the password!
+    await newUser.save();
+    
+    res.redirect('/login');
+  } catch (err) {
+    res.status(500).send('Error during signup: ' + err.message);
+  }
 });
 
-app.post('/login', (req, res) => {
-  const { username, password } = req.body;
-  if (!fs.existsSync(USERS_FILE)) return res.status(400).send('User not found');
-  const users = JSON.parse(fs.readFileSync(USERS_FILE, 'utf8'));
-  const user = users.find(u => u.username === username && u.password === password);
-  user ? res.redirect('/maps') : res.status(401).send('Invalid credentials');
+app.post('/login', async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const user = await User.findOne({ username, password });
+    
+    if (user) {
+      res.redirect('/maps');
+    } else {
+      res.status(401).send('Invalid credentials');
+    }
+  } catch (err) {
+    res.status(500).send('Error during login: ' + err.message);
+  }
 });
 
 // ── Crime Data API ─────────────────────────────────────────────────────────
 app.get('/api/crime-data/:city', (req, res) => {
   const city = req.params.city.toLowerCase();
-  const allowed = ['hyd', 'hyd_clustered'];
+  const allowed = ['hyd_clustered']; // Only allow the clustered data now
   if (!allowed.includes(city)) return res.status(400).json({ error: 'Unknown city' });
   const jsonPath = path.join(__dirname, 'data', `${city}.json`);
   if (!fs.existsSync(jsonPath)) return res.status(404).json({ error: 'Data not found' });

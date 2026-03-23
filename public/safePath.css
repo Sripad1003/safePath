@@ -1,68 +1,158 @@
-body{
-	padding-top: 70px;
-	background: url(http://holeinthedonut.smugmug.com/DailyPhotos/HITD-Daily-Photos/i-Wmw432C/0/O/Illinois-Chicago-downtown-street-scene.jpg);
-	background-size: cover;
-	background-position: center;
+body {
+    padding-top: 60px;
+    background: #f4f7f6;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
-.jumbotron{
-	color: #2c3e50;
-	background-size: cover;
-	height: 20%;
-    padding: 0.5em 0.6em;}
-    h1{
-        font-size: 2em;
-    }
-    p {
-        font-size: 1.2em;}
-        .btn {
-            padding: 0.5em;
-        }
-    
-
-
-.navbar-inverse{
-	background: #2c3e50;
+#map {
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-inverse .navbar-nav>li>a{
-	color: white;}
-
-.navbar-inverse .navbar-brand{
-	color:white;
+.navbar-inverse {
+    background: #2c3e50;
+    border: none;
 }
 
-.row {
-	font-family: Raleway;
-	color: white;
-}
-#creator{
-	text-align: center;
-
-}
-#map{
-	text-align: center;
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
 }
 
-#stats{
-	text-align: center;
+.navbar-inverse .navbar-brand {
+    color: white;
 }
 
-#credentials{
-	text-align: center;
+.main-content {
+    display: flex;
+    height: calc(100vh - 60px);
+    padding: 10px;
+    gap: 10px;
 }
 
-footer {
-    position: fixed;
-    height: 30%;
-    bottom: 0;
-    width: 85%;
+.sidebar {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
-.fab{
-	font-size: 100px;
+.map-container {
+    flex-grow: 1;
+    position: relative;
 }
 
-.search{
-	margin-top: 20px;
+.controls {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 35px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#origin-input,
+#destination-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 220px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+    border-color: #4d90fe;
+    box-shadow: 0 0 8px rgba(77, 144, 254, 0.5);
+}
+
+#mode-selector {
+    color: #fff;
+    background-color: #2c3e50;
+    margin-left: 12px;
+    padding: 6px 11px;
+    border-radius: 4px;
+}
+
+#mode-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.route-card {
+    background: #fff;
+    border-left: 5px solid #2c3e50;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.route-card h4 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.route-card .time {
+    color: #e67e22;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.route-card .danger {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+#location-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    background: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#location-btn:hover {
+    background: #eee;
+}
+
+.data-switch {
+    margin-bottom: 20px;
+}
+
+.data-switch button {
+    margin-right: 5px;
+}
+
+footer.fixed-bottom {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer h3 {
+    color: #e67e22;
+    margin-top: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
 }
