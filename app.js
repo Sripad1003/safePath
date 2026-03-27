@@ -7,28 +7,21 @@ const path = require('path');
 const fs = require('fs');
 require('dotenv').config();
 
-const connectDB = require('./config/db');
 const routeService = require('./services/routeService');
-const User = require('./models/User'); // Import User model
 
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-// ── Connect MongoDB ────────────────────────────────────────────────────────
-connectDB();
-
 // ── Middleware ─────────────────────────────────────────────────────────────
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 
 // ── API Key loader (uses .env first, falls back to api.txt) ───────────────
 app.get('/maps-loader.js', (req, res) => {
-  const apiKey = process.env.GOOGLE_MAPS_API_KEY ||
-                 (fs.existsSync('api.txt') ? fs.readFileSync('api.txt', 'utf8').trim() : '');
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY ;
   res.type('application/javascript');
   res.send(`
     const script = document.createElement("script");
@@ -38,42 +31,8 @@ app.get('/maps-loader.js', (req, res) => {
 });
 
 // ── HTML Routes ────────────────────────────────────────────────────────────
-app.get('/', (req, res) => res.render('index'));
-app.get('/login', (req, res) => res.render('login'));
-app.get('/signup', (req, res) => res.render('signup'));
-app.get('/maps', (req, res) => res.render('maps'));
-
-// ── Auth Routes (MongoDB based) ──────────────────────────────────────────
-app.post('/signup', async (req, res) => {
-  try {
-    const { username, password } = req.body;
-    if (!username || !password) return res.status(400).send('Username and password required');
-    
-    const existingUser = await User.findOne({ username });
-    if (existingUser) return res.status(400).send('User already exists');
-    
-    const newUser = new User({ username, password }); // In a real app, hash the password!
-    await newUser.save();
-    
-    res.redirect('/login');
-  } catch (err) {
-    res.status(500).send('Error during signup: ' + err.message);
-  }
-});
-
-app.post('/login', async (req, res) => {
-  try {
-    const { username, password } = req.body;
-    const user = await User.findOne({ username, password });
-    
-    if (user) {
-      res.redirect('/maps');
-    } else {
-      res.status(401).send('Invalid credentials');
-    }
-  } catch (err) {
-    res.status(500).send('Error during login: ' + err.message);
-  }
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // ── Crime Data API ─────────────────────────────────────────────────────────
@@ -125,3 +84,4 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Safe Path Recommender running on port ${PORT}`);
 });
+

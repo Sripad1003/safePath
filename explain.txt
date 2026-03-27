@@ -1,0 +1,65 @@
+columns in the clustered data.
+nm_pol	// name of the police station
+murder  // murder
+rape	// rape
+gangrape	// gangrape
+robbery	// robbery
+theft	// theft
+assualt murders	// assault murders
+sexual harassement	// sexual harassment
+totarea	// total area (in square km)
+totalcrime	// total crime 
+long	// longitude
+lat	// latitude
+crime/area	// crime per area (totalcrime / totarea)
+area	// area of the cluster (in square km) 
+cluster	// cluster number (0-4) calculated by k-means clustering and with base 0 as the most dangerous and 4 as the safest  
+danger_index // danger index of the cluster calcualted by danger_index = (totalcrime / totarea) * 100
+
+CRIME_LABELS = {
+    0: ["isolated alley","service road junction","back lane","dead end"],
+    1: ["metro station exit","bus stop corner","market road","flyover approach"],
+    2: ["night market road","auto stand","garbage dump","public toilet area","parking lot"],
+    3: ["flyover underpass","railway station outside","bus terminus","slum entrance","narrow gully"],
+    4: ["bridge underpass","fish market alley","red light area","old city backroad","freight yard lane"],
+}
+
+
+DirectionsService.route() method is used to get the directions between two points.
+routes[] (The main list)
+This is an array because Google might suggest multiple paths (like "Route 1" and "Route 2"). Each route inside this array contains:
+legs[] (The legs of the journey)
+If your trip is long, it might be broken into "legs" (e.g., Leg 1: Home to Downtown, Leg 2: Downtown to Airport).
+steps[] (The actual turn-by-turn instructions)
+This is the most important part for you. It is an array of individual steps like:
+"Turn left onto Main St","Merge onto I-95 N","Take exit 12"
+overview_path[] (The simplified path)
+This is a list of LatLng objects that form a simplified line along the route. It is used to draw the blue line on the map.
+summary: "a short summary of the route" 
+
+inside Leg[]:
+start_address: "start address" 
+end_address: "end address" 
+distance: "distance" 
+duration: "duration" 
+steps[] (The actual turn-by-turn instructions)
+This is the most important part for you. It is an array of individual steps like:
+"Turn left onto Main St","Merge onto I-95 N","Take exit 12"
+
+inside steps[]:
+instructions: "Turn left onto Main St"
+start_location: {lat: 12.9716, lng: 77.5946}
+end_location: {lat: 12.9716, lng: 77.5946}
+path: [{lat: 12.9716, lng: 77.5946}, {lat: 12.9716, lng: 77.5946}, ...]
+maneuver: "Turn left onto Main St"
+
+geocoded_waypoint[] (The geocoded waypoints)
+This is an handels the before and after of the route:
+place_id: Confirms exactly which building or landmark was used.
+types: Tells you if it was an "Address," a "City," or an "Establishment."
+
+How your specific code uses it:
+Safety Logic: Uses route.overview_path to cross-check with crime data.
+Dashboard: Uses leg.duration.text and leg.distance.text to show you how long the drive is.
+Visuals: Uses route.bounds to zoom the map automatically.
+Directions: Loops through leg.steps to create the turn-by-turn text.

@@ -1,4 +1,3 @@
-<%- include('partials/header') %>
 <!DOCTYPE html>
 <html>
 
@@ -6,39 +5,111 @@
   <title>Safe Path Recommender</title>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="safePath.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:800|Outfit:300,500,700" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <meta charset="utf-8">
   <style>
-    body { font-family: 'Outfit', sans-serif; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      padding-top: 50px;
+    }
+
     .route-card {
-       cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-       border-left: 6px solid #ccc; padding: 15px; margin-bottom: 12px;
-       border-radius: 8px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-left: 6px solid #ccc;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     }
-    .route-card:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
-    .route-card.active { background: #f8faff; border-left-width: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
-    
+
+    .route-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .route-card.active {
+      background: #f8faff;
+      border-left-width: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
     .directions-panel {
-       display: none; padding-top: 15px; margin-top: 15px; border-top: 1px solid #eee;
-       font-size: 0.9em; color: #555; max-height: 300px; overflow-y: auto;
+      display: none;
+      padding-top: 15px;
+      margin-top: 15px;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+      color: #555;
+      max-height: 300px;
+      overflow-y: auto;
     }
-    .dir-step { padding: 8px 0; border-bottom: 1px solid #fafafa; }
-    .btn-directions { 
-       margin-top: 10px; background: #2c3e50; color: white; border: none; 
-       padding: 8px 15px; border-radius: 20px; font-weight: 500; cursor: pointer;
+
+    .dir-step {
+      padding: 8px 0;
+      border-bottom: 1px solid #fafafa;
     }
-    .btn-directions:hover { background: #34495e; }
+
+    .btn-directions {
+      margin-top: 10px;
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .btn-directions:hover {
+      background: #34495e;
+    }
   </style>
 </head>
 
 <body>
+  <!-- Header Section Moved from partials/header.ejs -->
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="/" class="header item">Safe Path Recommender</a>
+    </div>
+  </div>
+
   <div class="main-content">
     <div class="sidebar">
       <h2 style="color: #2c3e50; font-family: Outfit; font-weight: 700; margin-bottom: 20px;">Safety Dashboard</h2>
+
+      <!-- Moved inputs here for better visibility -->
+      <div class="search-section" style="margin-bottom: 20px;">
+        <div class="ui fluid input" style="margin-bottom: 10px;">
+          <input id="origin-input" type="text" placeholder="Start Point (Origin)">
+        </div>
+        <div class="ui fluid input" style="margin-bottom: 15px;">
+          <input id="destination-input" type="text" placeholder="Destination">
+        </div>
+        <div id="mode-selector" class="ui segment secondary"
+          style="padding: 10px; background: #f9f9f9; border: 1px solid #eee;">
+          <div class="ui radio checkbox" style="margin-right: 15px;">
+            <input type="radio" name="type" id="changemode-walking" checked="checked">
+            <label for="changemode-walking">Walking</label>
+          </div>
+          <!-- <div class="ui radio checkbox" style="margin-right: 15px;">
+            <input type="radio" name="type" id="changemode-bike">
+            <label for="changemode-bike">Bike</label>
+          </div> -->
+          <div class="ui radio checkbox">
+            <input type="radio" name="type" id="changemode-car">
+            <label for="changemode-car">Car</label>
+          </div>
+        </div>
+      </div>
+
       <div class="data-status">
         <p><strong>Status:</strong> <span id="data-status-text">Enter route to see safety data</span></p>
       </div>
@@ -49,11 +120,18 @@
       <div id="info-section">
         <h4 style="font-weight: 700; margin-bottom: 15px;">Safety Legend</h4>
         <ul style="list-style: none; padding-left: 0;">
-          <li><img src="https://static9.depositphotos.com/1431107/1143/i/950/depositphotos_11437164-stock-photo-green-tick.jpg" width="15"> Low Risk (Safe)</li>
-          <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png" width="15"> Moderate Risk</li>
-          <li><img src="https://cdn3.iconfinder.com/data/icons/picons-weather/57/53_warning-256.png" width="15"> Caution</li>
-          <li><img src="https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/cps-spc/images/legislation/acts-lois/hazard-symbol-danger1.jpg" width="15"> High Risk</li>
-          <li><img src="https://cdn.pixabay.com/photo/2012/04/23/16/54/warning-39047_640.png" width="15"> Extreme Risk</li>
+          <li><img
+              src="https://static9.depositphotos.com/1431107/1143/i/950/depositphotos_11437164-stock-photo-green-tick.jpg"
+              width="15"> Low Risk (Safe)</li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png"
+              width="15"> Moderate Risk</li>
+          <li><img src="https://cdn3.iconfinder.com/data/icons/picons-weather/57/53_warning-256.png" width="15"> Caution
+          </li>
+          <li><img
+              src="https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/cps-spc/images/legislation/acts-lois/hazard-symbol-danger1.jpg"
+              width="15"> High Risk</li>
+          <li><img src="https://cdn.pixabay.com/photo/2012/04/23/16/54/warning-39047_640.png" width="15"> Extreme Risk
+          </li>
         </ul>
       </div>
     </div>
@@ -61,27 +139,16 @@
     <div class="map-container">
       <button id="location-btn" title="Find My Location"><i class="fas fa-crosshairs"></i></button>
       <div id="map"></div>
-      <input id="origin-input" class="controls" type="text" placeholder="Start Point">
-      <input id="destination-input" class="controls" type="text" placeholder="Destination">
-      <div id="mode-selector" class="controls">
-        <input type="radio" name="type" id="changemode-walking" checked="checked">
-        <label for="changemode-walking">Walking</label>
-        <input type="radio" name="type" id="changemode-bike">
-        <label for="changemode-bike">Bike</label>
-        <input type="radio" name="type" id="changemode-car">
-        <label for="changemode-car">Car</label>
-      </div>
     </div>
   </div>
 
-  <script src="/maps-loader.js" async defer></script>
   <script>
-    var data = []; 
+    var data = [];
     var map;
-    var directionsRenderers = []; 
+    var directionsRenderers = [];
     var directionsService;
     var dataFetched = false;
-    var ICON_SET = []; 
+    var ICON_SET = [];
     var currentSearchId = 0;
 
     function AutocompleteDirectionsHandler(map) {
@@ -102,10 +169,6 @@
 
       this.setupPlaceChangedListener(this.originAutocomplete, 'ORIG');
       this.setupPlaceChangedListener(this.destinationAutocomplete, 'DEST');
-
-      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
-      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(destinationInput);
-      this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(modeSelector);
     }
 
     AutocompleteDirectionsHandler.prototype.setupClickListener = function (id, mode) {
@@ -130,7 +193,7 @@
       if (!this.originPlaceId || !this.destinationPlaceId) return;
       var me = this; currentSearchId++; var searchId = currentSearchId;
       fetchCrimeDataOnce().then(() => {
-        directionsService.route({
+        directionsService.route({ //directionsService is a google maps api service that provides directions between two points
           origin: { 'placeId': this.originPlaceId }, destination: { 'placeId': this.destinationPlaceId },
           travelMode: this.travelMode, provideRouteAlternatives: true, unitSystem: google.maps.UnitSystem.METRIC
         }, function (response, status) {
@@ -160,8 +223,9 @@
     }
 
     function getDistance(p1, p2) {
-       var R = 6371; var a = Math.sin(((p2.lat()-p1.lat())*Math.PI/180)/2)**2 + Math.cos(p1.lat()*Math.PI/180)*Math.cos(p2.lat()*Math.PI/180)*Math.sin(((p2.lng()-p1.lng())*Math.PI/180)/2)**2;
-       return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)));
+      var R = 6371;
+      var a = Math.sin(((p2.lat() - p1.lat()) * Math.PI / 180) / 2) ** 2 + Math.cos(p1.lat() * Math.PI / 180) * Math.cos(p2.lat() * Math.PI / 180) * Math.sin(((p2.lng() - p1.lng()) * Math.PI / 180) / 2) ** 2;
+      return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
     }
 
     function fetchCrimeDataOnce() {
@@ -178,15 +242,15 @@
 
       for (var k = 0; k < response.routes.length; k++) {
         var path = response.routes[k].overview_path;
-        
-        data.forEach(function(item) {
+
+        data.forEach(function (item) {
           var itemPos = new google.maps.LatLng(item.longi, item.lati);
           var min_dist = 999;
-          for(var i=0; i < path.length; i+=Math.ceil(path.length/10)) {
+          for (var i = 0; i < path.length; i += Math.ceil(path.length / 10)) {
             var d = getDistance(itemPos, path[i]);
             if (d < min_dist) min_dist = d;
           }
-          if (min_dist <= 1.0) {
+          if (min_dist <= 1) {
             activeMarkers.push(new google.maps.Marker({ position: itemPos, map: map, icon: ICON_SET[item.properties.mag] || ICON_SET[0] }));
           }
         });
@@ -194,25 +258,25 @@
         // Insert Safe Points
         path.forEach((pt, idx) => {
           if (idx % 20 === 0) {
-            var near = data.some(item => getDistance(new google.maps.LatLng(item.longi, item.lati), pt) <= 3.5);
+            var near = data.some(item => getDistance(new google.maps.LatLng(item.longi, item.lati), pt) <= 1);
             if (!near) activeMarkers.push(new google.maps.Marker({ position: pt, map: map, icon: ICON_SET[0], opacity: 0.25 }));
           }
         });
 
         var dr = new google.maps.DirectionsRenderer({
-          map: map, directions: response, routeIndex: k, 
+          map: map, directions: response, routeIndex: k,
           polylineOptions: { strokeColor: colors[k % colors.length], strokeWeight: 7, strokeOpacity: 0.5 }
         });
         directionsRenderers.push(dr);
 
-        (function(idx, currentId, rendererRef) {
-           var pathPoints = response.routes[idx].overview_path.map(p => ({ lat: p.lat(), lng: p.lng() }));
-           fetch('/api/route-safety', {
-             method: 'POST', headers: { 'Content-Type': 'application/json' },
-             body: JSON.stringify({ routePoints: pathPoints, city: 'hyd_clustered' })
-           }).then(r => r.json()).then(safety => {
-             if (currentId === currentSearchId) renderRouteCard(response, safety, idx, colors[idx % colors.length], rendererRef);
-           });
+        (function (idx, currentId, rendererRef) {// pathPoints is an array of latlng objects that represents the path of the route
+          var pathPoints = response.routes[idx].overview_path.map(p => ({ lat: p.lat(), lng: p.lng() }));
+          fetch('/api/route-safety', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ routePoints: pathPoints, city: 'hyd_clustered' })
+          }).then(r => r.json()).then(safety => {
+            if (currentId === currentSearchId) renderRouteCard(response, safety, idx, colors[idx % colors.length], rendererRef);
+          });
         })(k, searchId, dr);
       }
     }
@@ -224,7 +288,7 @@
       card.className = "route-card";
       card.id = cardId;
       card.style.borderLeftColor = color;
-      
+
       var stepsHtml = route.legs[0].steps.map(s => `<div class="dir-step">${s.instructions} (${s.distance.text})</div>`).join('');
 
       card.innerHTML = `
@@ -235,20 +299,20 @@
           </div>
           <div style="text-align: right;">
             <p style="margin:0; font-size: 0.9em; opacity:0.7;">${route.legs[0].distance.text}</p>
-            <p style="margin:2px 0 0; font-weight:700; color:#e74c3c;">Safety Index: ${safety.dangerIndex}</p>
+            <p style="margin:2px 0 0; font-weight:700; color:#e74c3c;">Danger Index: ${safety.dangerIndex}</p>
           </div>
         </div>
         <button class="btn-directions" onclick="toggleDirections(${idx}); event.stopPropagation();">Get Directions</button>
         <div id="directions-${idx}" class="directions-panel">${stepsHtml}</div>
       `;
-      
-      card.onclick = function() {
+
+      card.onclick = function () {
         // Focus this route
         directionsRenderers.forEach(r => r.setOptions({ polylineOptions: { strokeOpacity: 0.2, strokeWeight: 5 } }));
         renderer.setOptions({ polylineOptions: { strokeOpacity: 1.0, strokeWeight: 10, strokeColor: color } });
         $('.route-card').removeClass('active');
         $(card).addClass('active');
-        
+
         map.fitBounds(route.bounds);
       };
 
@@ -256,17 +320,17 @@
     }
 
     function toggleDirections(idx) {
-       var panel = document.getElementById('directions-' + idx);
-       var isVisible = $(panel).is(':visible');
-       $('.directions-panel').slideUp();
-       if (!isVisible) $(panel).slideDown();
+      var panel = document.getElementById('directions-' + idx);
+      var isVisible = $(panel).is(':visible');
+      $('.directions-panel').slideUp();
+      if (!isVisible) $(panel).slideDown();
     }
 
     $(document).ready(function () {
       const socket = io();
       if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(initMap, function(){ initMap(); });
-        navigator.geolocation.watchPosition(function(pos) {
+        navigator.geolocation.getCurrentPosition(initMap, function () { initMap(); });
+        navigator.geolocation.watchPosition(function (pos) {
           socket.emit('gps:update', { lat: pos.coords.latitude, lng: pos.coords.longitude, city: 'hyd_clustered' });
         });
       } else { initMap(); }
@@ -276,9 +340,11 @@
     });
   </script>
 
-  <footer class="fixed-bottom" style="padding: 10px; background: #2c3e50; color: white; position: relative;">
+  <footer class="fixed-bottom"
+    style="padding: 10px; background: #2c3e50; color: white; position: relative; margin-top: 20px;">
     <div class="container text-center"><small>© SafePath Hyderabad AI Navigation</small></div>
   </footer>
+  <script src="/maps-loader.js"></script>
 </body>
 
 </html>
