@@ -1,58 +1,55 @@
-# Safe Path Recommender - Hyderabad & GHMC
-Because you must look before you leave!
+# Safe Path Recommender: Hyderabad
 
+**"Look before you leave!"**
 
-We are going to address the issue of safety in our project named ‘Safe Path Recommender’.
+SafePath is a navigation enhancement tool that prioritizes **personal safety** over just travel time. While traditional GPS systems (like Google Maps) focus on the fastest route, SafePath evaluates the **Danger Index** along potential paths using historical crime data and real-time proximity alerts.
 
-Hyderabad, a major IT and industrial hub in South India, encompasses the GHMC area and the surrounding Ranga Reddy district. As urban sprawl continues, the density and distribution of micro-level crimes like theft, harassment, and robberies change across the city.
-People walk on the streets but they are not safe, back from work, parties, late night dinners, parks, and even shopping centers. Our web app helps users judge the safety of a specific neighborhood or route in real-time. We have mapped 500+ micro-level data points across Hyderabad including Hitech City, Madhapur, Mehdipatnam, Uppal, LB Nagar, and the Outer Ring Road (ORR) corridor!
+---
 
-## Our solution to the problem:
-Google Maps provides the fastest route without considering security. Our web app calculates the safest route by evaluating the danger index along possible paths. Our custom data covers the entire GHMC and Ranga Reddy district precisely.
+## 🚀 Project Overview
 
+In rapidly growing urban hubs like Hyderabad and the surrounding GHMC areas, safety patterns change across neighborhoods. SafePath helps users make informed decisions by visualizing high-risk areas ("hotspots") and calculating the safest possible route between two locations.
 
-## Technical concept used:
-We have applied the K-means clustering algorithm to find the danger index of many possible paths. We mapped 532 micro-level locations across Hyderabad assigning a magnitude of criminal activity in the range of 0 to 4. We use Google Maps and Google Places APIs to display all possible routes and calculate safety.
-* **Danger Index**: Calculates safety for multiple paths and recommends the best one.
-* **Autocomplete**: Integrated Google Places for easy location entry.
-* **Travel Modes**: Support for Walking, Transit, and Driving.
-* **Visual Markers**: Map hotspots indicate risk level (Green Tick to Red Skull).
-* **Distributed Backend**: Uses Express, MongoDB, and Socket.IO for real-time GPS tracking and danger alerts.
-* **Automation**: Python scripts for micro-level data generation and K-Means processing.
-  *	Google Maps JavaScript API
-  *	Google Maps Embed API
-  *	Google Maps Directions API
-  *	Google Maps Geolocation API
-  *	Google Places API Web Service: 
+### Key Features
+*   🛡️ **Safety-First Routing**: Calculates a "Danger Index" for multiple route options.
+*   📍 **Hyderabad Specific**: Mapped across 500+ micro-level data points including Hitech City, Madhapur, Mehdipatnam, Uppal, and the ORR corridor.
+*   ⚠️ **Real-Time Alerts**: Uses Socket.io and GPS tracking to warn users when they approach dangerous zones (within 300m).
+*   📊 **AI-Driven Data**: Uses **K-Means Clustering** to process raw crime incidents into manageable, high-impact hotspots.
+*   🚦 **Visual Legend**: Intuitive markers ranging from Green Ticks (Safe) to Red Skulls (High Danger).
 
-## Result of training the model:
+---
 
-- The k-means algorithm assigns 0-4 magnitude of crime level to all locations in Delhi Ncr (Delhi, Noida and Gurgaon).
-- The Danger Index of ‘0’ implies that the place considered is relatively much safe with less crime records in past while an index of 4 means that the place has high crime records in the past.
-- The figure below is showing detailed information of the Safety of paths  below the map so that user also knows what all things he has to consider while making his choice to make smart decisions like Distance, Time Duration, Danger Index, Route Number, and Color of the Route.
+## 🛠️ Tech Stack
 
-## Legend
-- Green Ticks: Safest
-- Smiley: Moderately safe
-- Exclamation mark: Be careful
-- Skull: Moderately dangerous
-- Cross: Extremely dangerous
+*   **Frontend**: Vanilla HTML5, CSS3, JavaScript (Google Maps JS API).
+*   **Backend**: Node.js, Express.js.
+*   **Real-time**: Socket.io for live GPS tracking and safety updates.
+*   **Data Processing**: Python (Scikit-Learn for K-Means Clustering).
+*   **APIs**: Google Maps Directions, Places, and Geolocation APIs.
 
-### Homepage of the app looks like:
-![Screenshot 1](https://github.com/ishank62/Safe-Path-Recommender/blob/master/images/Screenshot%20(147).png)
+---
 
+## 📝 Development & Implementation Notes
 
-### This is how the Web App looks like while recommending Safe Paths:
-![Screenshot 2](https://github.com/ishank62/Safe-Path-Recommender/blob/master/images/Screenshot%20(149).png)
+For a deep dive into the architecture, file-by-file logic, and the end-to-end workflow of this project, please refer to the building notes:
 
+👉 **[PROJECT_NOTES.md](PROJECT_NOTES.md)**
+> *This document contains the technical breakdown and internal logic captured during the development process.*
 
-### Web App Showing Safe Path between “Saket, New Delhi, India” to “Karkardooma, New Delhi, India” with the different markers (Skull, Exclamation Mark Triangle, Smiley, Green Ticks, etc) and different routed each colored differently.:
-![Screenshot 3](https://github.com/ishank62/Safe-Path-Recommender/blob/master/images/Screenshot%20(148).png)
+---
 
+## 🚦 How it Works (The Workflow)
 
-### Figure showing the statistics of the recommended 3 Safe Paths like its Color, Time Duration for the respective path, Distance of the path, Danger Index (according to which the priority of listing of paths is set):
-![Screenshot 4](https://github.com/ishank62/Safe-Path-Recommender/blob/master/images/Screenshot%20(150).png)
+1.  **Input**: User enters origin and destination in the search interface.
+2.  **Route Discovery**: Google Maps API fetches potential routes.
+3.  **Risk Analysis**: The backend server processes the route coordinates against clustered crime data (retrieved via the `routeService`).
+4.  **Scoring**: Each path is assigned a score based on nearby crime magnitude.
+5.  **Visualization**: The map displays markers, and the sidebar highlights the safest path with color-coded safety indices.
 
+---
 
+## 📜 Credits & Acknowledgments
 
-This Project was made by [Ishank Agarwal](https://www.github.com/ishank62) as a part of College Minor Project.
+This project was refined and simplified from its original version to focus on a lightweight, public-facing interface for the Hyderabad region.
+
+*Original concept by [Ishank Agarwal](https://www.github.com/ishank62).*
