@@ -49,19 +49,24 @@ function calculateRouteSafety(routePoints, city = 'hyd_clustered') {
 
   for (const point of routePoints) {
     for (const zone of crimeData) {
-      // NOTE: project stores lati=lng, longi=lat (legacy swap)
-      const zoneLat = zone.longi;
-      const zoneLng = zone.lati;
+      let zoneLat = zone.lati;
+      let zoneLng = zone.longi;
+      // Handle swapped coordinates (Hyd is Lat ~17, Lng ~78)
+      if (zoneLat > 50) {
+        zoneLat = zone.longi;
+        zoneLng = zone.lati;
+      }
+
       const dist = haversine(point.lat, point.lng, zoneLat, zoneLng);
 
       if (dist <= MATCH_RADIUS_KM) {
-        const mag = (zone.properties && zone.properties.mag) || 0;
-        totalDanger += mag;
+        const danger_index = zone.properties ? (zone.properties.danger_index ?? zone.properties.mag ?? 0) : 0;
+        totalDanger += danger_index;
         matchCount++;
         matchedZones.push({
           lat: zoneLat,
           lng: zoneLng,
-          mag,
+          danger_index,
           name: (zone.properties && zone.properties.name) || '',
           distKm: +dist.toFixed(3)
         });
@@ -82,14 +87,21 @@ function getNearbyDangerZones(lat, lng, city = 'hyd_clustered', radiusKm = 0.3) 
   const nearby = [];
 
   for (const zone of crimeData) {
-    const zoneLat = zone.longi;
-    const zoneLng = zone.lati;
+    let zoneLat = zone.lati;
+    let zoneLng = zone.longi;
+    // Handle swapped coordinates (Hyd is Lat ~17, Lng ~78)
+    if (zoneLat > 50) {
+      zoneLat = zone.longi;
+      zoneLng = zone.lati;
+    }
+
     const dist = haversine(lat, lng, zoneLat, zoneLng);
     if (dist <= radiusKm) {
+      const danger_index = zone.properties ? (zone.properties.danger_index ?? zone.properties.mag ?? 0) : 0;
       nearby.push({
         lat: zoneLat,
         lng: zoneLng,
-        mag: (zone.properties && zone.properties.mag) || 0,
+        danger_index: danger_index,
         name: (zone.properties && zone.properties.name) || '',
         distKm: +dist.toFixed(3)
       });
@@ -97,7 +109,7 @@ function getNearbyDangerZones(lat, lng, city = 'hyd_clustered', radiusKm = 0.3) 
   }
 
   // Sort by danger (highest first), then proximity
-  nearby.sort((a, b) => b.mag - a.mag || a.distKm - b.distKm);
+  nearby.sort((a, b) => b.danger_index - a.danger_index || a.distKm - b.distKm);
   return { lat, lng, nearby };
 }
 

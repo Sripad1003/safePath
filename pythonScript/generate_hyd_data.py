@@ -190,10 +190,10 @@ print(f"Written: {csv_path}")
 json_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'hyd.json')
 features = [
     {
-        "lati": p["lng"],     # NOTE: project uses lati=lng, longi=lat (legacy swap)
-        "longi": p["lat"],
+        "lati": p["lat"],
+        "longi": p["lng"],
         "type": "Feature",
-        "properties": {"mag": p["danger"]}
+        "properties": {"danger_index": p["danger"]}
     }
     for p in all_points
 ]

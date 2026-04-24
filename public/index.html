@@ -120,18 +120,11 @@
       <div id="info-section">
         <h4 style="font-weight: 700; margin-bottom: 15px;">Safety Legend</h4>
         <ul style="list-style: none; padding-left: 0;">
-          <li><img
-              src="https://static9.depositphotos.com/1431107/1143/i/950/depositphotos_11437164-stock-photo-green-tick.jpg"
-              width="15"> Low Risk (Safe)</li>
-          <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png"
-              width="15"> Moderate Risk</li>
-          <li><img src="https://cdn3.iconfinder.com/data/icons/picons-weather/57/53_warning-256.png" width="15"> Caution
-          </li>
-          <li><img
-              src="https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/cps-spc/images/legislation/acts-lois/hazard-symbol-danger1.jpg"
-              width="15"> High Risk</li>
-          <li><img src="https://cdn.pixabay.com/photo/2012/04/23/16/54/warning-39047_640.png" width="15"> Extreme Risk
-          </li>
+          <li><img src="https://maps.google.com/mapfiles/ms/icons/green-dot.png" width="15"> Low Risk (Safe)</li>
+          <li><img src="https://maps.google.com/mapfiles/ms/icons/yellow-dot.png" width="15"> Moderate Risk</li>
+          <li><img src="https://maps.google.com/mapfiles/ms/icons/orange-dot.png" width="15"> Caution</li>
+          <li><img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" width="15"> High Risk</li>
+          <li><img src="https://maps.google.com/mapfiles/ms/icons/purple-dot.png" width="15"> Extreme Risk</li>
         </ul>
       </div>
     </div>
@@ -210,11 +203,11 @@
     function initMap(location) {
       directionsService = new google.maps.DirectionsService();
       ICON_SET = [
-        { url: 'https://static9.depositphotos.com/1431107/1143/i/950/depositphotos_11437164-stock-photo-green-tick.jpg', scaledSize: new google.maps.Size(25, 25) },
-        { url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/220px-SNice.svg.png', scaledSize: new google.maps.Size(25, 25) },
-        { url: 'https://cdn3.iconfinder.com/data/icons/picons-weather/57/53_warning-256.png', scaledSize: new google.maps.Size(25, 25) },
-        { url: 'https://www.canada.ca/content/dam/hc-sc/migration/hc-sc/cps-spc/images/legislation/acts-lois/hazard-symbol-danger1.jpg', scaledSize: new google.maps.Size(25, 25) },
-        { url: 'https://cdn.pixabay.com/photo/2012/04/23/16/54/warning-39047_640.png', scaledSize: new google.maps.Size(25, 25) }
+        { url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png', scaledSize: new google.maps.Size(28, 28) },
+        { url: 'https://maps.google.com/mapfiles/ms/icons/yellow-dot.png', scaledSize: new google.maps.Size(28, 28) },
+        { url: 'https://maps.google.com/mapfiles/ms/icons/orange-dot.png', scaledSize: new google.maps.Size(28, 28) },
+        { url: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png', scaledSize: new google.maps.Size(28, 28) },
+        { url: 'https://maps.google.com/mapfiles/ms/icons/purple-dot.png', scaledSize: new google.maps.Size(28, 28) }
       ];
       var loc = (location && location.coords) ? new google.maps.LatLng(location.coords.latitude, location.coords.longitude) : new google.maps.LatLng(17.38505, 78.48667);
       map = new google.maps.Map(document.getElementById('map'), { zoom: 13, center: loc, mapTypeId: 'terrain' });
@@ -237,35 +230,45 @@
     function clearMarkers() { activeMarkers.forEach(m => m.setMap(null)); activeMarkers = []; }
 
     function processRoutes(response, searchId) {
-      var colors = ["#8e44ad", "#f39c12", "#27ae60", "#2980b9", "#d35400"];
+      var colors = ["#6200ea", "#e65100", "#00695c", "#0d47a1", "#b71c1c"];
       document.getElementById('route-results').innerHTML = "";
 
       for (var k = 0; k < response.routes.length; k++) {
         var path = response.routes[k].overview_path;
 
         data.forEach(function (item) {
-          var itemPos = new google.maps.LatLng(item.longi, item.lati);
+          // Robust coordinate check (Hyd is Lat ~17, Lng ~78)
+          var lat = item.lati;
+          var lng = item.longi;
+          if (lat > 50) { // Values are swapped in JSON
+            lat = item.longi;
+            lng = item.lati;
+          }
+
+          var itemPos = new google.maps.LatLng(lat, lng);
           var min_dist = 999;
           for (var i = 0; i < path.length; i += Math.ceil(path.length / 10)) {
             var d = getDistance(itemPos, path[i]);
             if (d < min_dist) min_dist = d;
           }
           if (min_dist <= 1) {
-            activeMarkers.push(new google.maps.Marker({ position: itemPos, map: map, icon: ICON_SET[item.properties.mag] || ICON_SET[0] }));
+            var dangerIdx = item.properties.danger_index !== undefined ? item.properties.danger_index : (item.properties.mag !== undefined ? item.properties.mag : 0);
+            activeMarkers.push(new google.maps.Marker({ position: itemPos, map: map, icon: ICON_SET[dangerIdx] || ICON_SET[0] }));
           }
         });
 
         // Insert Safe Points
         path.forEach((pt, idx) => {
           if (idx % 20 === 0) {
-            var near = data.some(item => getDistance(new google.maps.LatLng(item.longi, item.lati), pt) <= 1);
+            var near = data.some(item => getDistance(new google.maps.LatLng(item.lati, item.longi), pt) <= 1);
             if (!near) activeMarkers.push(new google.maps.Marker({ position: pt, map: map, icon: ICON_SET[0], opacity: 0.25 }));
           }
         });
 
         var dr = new google.maps.DirectionsRenderer({
           map: map, directions: response, routeIndex: k,
-          polylineOptions: { strokeColor: colors[k % colors.length], strokeWeight: 7, strokeOpacity: 0.5 }
+          suppressMarkers: false,
+          polylineOptions: { strokeColor: colors[k % colors.length], strokeWeight: 8, strokeOpacity: 0.85 }
         });
         directionsRenderers.push(dr);
 

@@ -55,11 +55,11 @@ print(f"\nWritten: {out_csv}")
 features = []
 for _, row in df.iterrows():
     features.append({
-        "lati":  round(row["long"], 6),
-        "longi": round(row["lat"],  6),
+        "lati":  round(row["lat"], 6),
+        "longi": round(row["long"], 6),
         "type":  "Feature",
         "properties": {
-            "mag":     int(row["danger_index"]),
+            "danger_index": int(row["danger_index"]),
             "cluster": int(row["cluster"]),
             "name":    row["nm_pol"]
         }
